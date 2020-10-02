@@ -1,8 +1,26 @@
-header {
-    background-color: gray;
-    height: 100px;
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(9, 100px);
+    row-gap: 10px;
 }
-    
+
+header {
+    grid-column: 1 / 8;
+    grid-row: 1;
+    background-color: gray;
+}
+
 img {
-    height: 100px;
+    max-height: 100px;
+}
+
+footer {
+    grid-column: 1 / 8;
+    grid-row: 9 / 10;
+}
+
+.worldmap {
+    grid-column: 1 / 8;
+    grid-row: 2 / 9;
 }

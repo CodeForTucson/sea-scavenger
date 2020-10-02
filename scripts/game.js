@@ -37,6 +37,20 @@ let plasticsCollected = {
     WrapperOrLabel: 0
 };
 
-window.onload = function() {
-//    alert("The game loop is running!");
+// executeMission
+// Interact with the player to assign and execute a mission. 
+// If the mission is successful, return true, else false. 
+const executeMission = function() {
+    console.log("Executing mission...");
+    return false;
 }
+
+// Event listener that executes when the page has loaded to start the game loop.
+// The loop will run until a mission is not successful.
+window.addEventListener("load" , event => {
+    console.log("The game loop is running!");
+    let play = true;
+    while (play) {
+        play = executeMission();
+    };
+});

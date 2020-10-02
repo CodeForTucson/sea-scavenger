@@ -1,24 +1,30 @@
-header {
-    background-color: gray;
-    height: 100px;
-}
-    
-img {
-    height: 100px;
-}
-
 body {
     background-color: lightgray;
+    display: flex;
+    flex-direction: column;
 }
 
+header {
+    background-color: gray;
+    flex: 1;
+}
+
+section {
+    flex: 3;
+    align-items: center;
+}
+    
+footer {
+    flex: 1;
+    font-size: 8em;
+}
+    
 h1 {
-    text-align: center;
     font-size: 32px;
     font-family: 'Lucida Sans';
 }
 
 p {
-    text-align: center;
     font-size: 18px;
     font-family: 'Lucida Sans';
 }

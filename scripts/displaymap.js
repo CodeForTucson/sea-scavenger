@@ -1,5 +1,5 @@
-var width = 900;
-var height = 550;
+var height = 540;
+var width = 950;
 
 var projection = d3.geoMercator()
     .center([0, 20])
@@ -7,8 +7,8 @@ var projection = d3.geoMercator()
     .rotate([-10, 0]);
 
 var svg = d3.select(".worldmap").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    .attr("preserveAspectRatio", "xMidYMid")
+    .attr("viewBox", "0 0 " + width + " " + height);
 
 var path = d3.geoPath()
     .projection(projection);
