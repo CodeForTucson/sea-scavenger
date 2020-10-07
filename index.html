@@ -4,36 +4,47 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sea Scavenger</title>
+        <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/splashstyle.css">
+        <link rel="stylesheet" href="styles/mapstyle.css">
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
     </head>
     <body>
-        <header>
-            <img src="images/sea-scavenger-logo.png">
-        </header>
-        <section>
-            <h1>Welcome to Sea Scavenger!</h1>
-            <p>In this game, you are part of the circular economy.</p>
-            <p>What is a circular economy? We're glad you asked!
-                In a circular economy, nothing goes to waste. Instead, when
-                goods reach the end of their life, they are remanufactured into
-                something new.
-            </p>
-            <p>Your task in this game is to recover plastic waste from the
-                coasts of countries around the world so the items can be made
-                into something new.
-            </p>
-            <p>For each turn, you will be given a mission to recover a specific 
-                type of plastic waste. You then choose the country your team will
-                recover the plastic from to achieve the mission. If there is 
-                enough of that type of plastic waste at that location, you will
-                succeed and get a new mission. If you don't retrieve enough waste,
-                the game is over.
-            </p>
-            <p>Good luck!</p>
-            <button onclick="window.location.href='gameboard.html';">Play Now</button>
-        </section>
-        <footer>
-            <p>A project of Code for Tucson.</p>
-        </footer>
+        <div class="container">
+            <header>
+                <img src="images/sea-scavenger-logo.png">
+            </header>
+            <section id="splashscreen">
+                <h1>Welcome to Sea Scavenger!</h1>
+                <p>In this game, you are part of the circular economy.</p>
+                <p>What is a circular economy? We're glad you asked!</p>
+                <p>In a circular economy, nothing goes to waste. Instead, when
+                    goods reach the end of their life, they are remanufactured into
+                    something new.
+                </p>
+                <p>Your task in this game is to recover plastic waste from the
+                    coasts of countries around the world so the items can be remanufactured.
+                </p>
+                <ul>
+                    <li>For each turn, you will be given a mission to recover a specific 
+                        type of plastic waste.</li>
+                    <li>You then choose the country your team will
+                        recover the plastic from to achieve the mission.</li>
+                    <li>If there is 
+                        enough of that type of plastic waste at that location, you will
+                        succeed and get a new mission.</li>
+                    <li>If you don't retrieve enough waste,
+                        the game is over.</li>
+                </ul>
+                <h3>Good luck!</h3>
+            </section>
+            <div class="worldmap"></div>
+            <footer>
+                <p>A project of Code for Tucson.</p>
+            </footer>    
+        </div>
+        <script src="scripts/displaymap.js"></script>
+        <script src="scripts/game.js"></script>
     </body>
 </html>

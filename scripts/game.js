@@ -37,6 +37,12 @@ let plasticsCollected = {
     WrapperOrLabel: 0
 };
 
+// Hide the splashscreen after giving player time to read it.
+function hideSplash() {
+    let splash = document.getElementById("splashscreen");
+    splash.style.display = "none";
+}
+
 // executeMission
 // Interact with the player to assign and execute a mission. 
 // If the mission is successful, return true, else false. 
@@ -49,6 +55,7 @@ const executeMission = function() {
 // The loop will run until a mission is not successful.
 window.addEventListener("load" , event => {
     console.log("The game loop is running!");
+    window.setTimeout(hideSplash, 30000);
     let play = true;
     while (play) {
         play = executeMission();
