@@ -11,13 +11,17 @@ header {
     background-color: gray;
 }
 
-img {
-    max-height: 100px;
+header img {
+    max-height: 100%;
 }
 
 footer {
     grid-column: 1 / 8;
     grid-row: 9 / 10;
+}
+
+footer img {
+    max-height: 35%;
 }
 
 .worldmap {
