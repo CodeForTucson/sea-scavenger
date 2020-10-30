@@ -1,0 +1,10 @@
+#playagainscreen {
+    grid-column: 3 / 6;
+    grid-row: 4 / 7;
+    border-color: black;
+    background-color: lightgray;
+    padding-left: 1em;
+    padding-right: 1em;
+    z-index: 100;
+    display: none;
+}

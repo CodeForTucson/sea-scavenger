@@ -15,10 +15,10 @@
     text-align: center;
 }
 
-#missionscreen.yes-button {
-    color: green;
+#mission-yes-button {
+    background-color: green;
 }
 
-#missionscreen.no-button {
-    color: red;
+#mission-no-button {
+    background-color: red;
 }

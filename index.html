@@ -8,6 +8,12 @@
         <link rel="stylesheet" href="styles/splashstyle.css">
         <link rel="stylesheet" href="styles/missionstyle.css">
         <link rel="stylesheet" href="styles/mapstyle.css">
+        <link rel="stylesheet" href="styles/countrystyle.css">
+        <link rel="stylesheet" href="styles/executionstyle.css">
+        <link rel="stylesheet" href="styles/confirmationstyle.css">
+        <link rel="stylesheet" href="styles/statisticsstyle.css">
+        <link rel="stylesheet" href="styles/playagainstyle.css">
+        <link rel="stylesheet" href="styles/creditstyle.css">
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <script src="https://unpkg.com/topojson@3"></script>
     </head>
@@ -40,12 +46,96 @@
                 </ul>
                 <h3>Good luck!</h3>
             </section>
-            <div class="worldmap"></div>
             <section id="missionscreen">
-                <h1>MISSION</h1>
-                <span><button id="yes-button">YES</button>ACCEPT?<button id="no-button">NO</button></span>
+                <p>
+                    <img id="plastic-image" src="images/default-plastic.png" alt="Image of plastic waste.">
+                    <span id="screen-title">MISSION</span>
+                    <span id="mission-num-pieces">000,000</span><br />
+                    <span id="mission-plastic-type">PLASTIC</span>
+                </p>
+                <p>
+                    <span id="to-make-text">TO MAKE</span>
+                    <span id="plastic-product">SUNGLASSES</span>
+                    <img id="product-image" src="images/default-product.png" alt="Image of plastic product.">
+                </p>
+                <p>
+                    <button id="mission-yes-button">YES</button>ACCEPT?<button id="mission-no-button">NO</button>
+                </p>
             </section>
-            <footer>
+            <section id="countryscreen">
+                <p>
+                    <span id="country-num-pieces">000,000</span>
+                    <span id="country-plastic-type">PLASTIC</span>
+                    <span id="chooser-text">Choose a country</span>
+                    <button id="country-button-1">Country 1</button>
+                    <button id="country-button-2">Country 2</button>
+                    <button id="country-button-3">Country 3</button>
+                    <button id="country-button-4">Country 4</button>
+                    <button id="country-button-5">Country 5</button>
+                    <button id="country-button-6">Country 6</button>
+                </p>
+            </section>
+            <section id="missionexecutionscreen">
+                <p>
+                    <span id="execution-num-pieces">000,000</span>
+                    <span id="execution-plastic-type">PLASTIC</span>
+                </p>
+                <p id="execution-piece-count">000,000</p>
+                <p>
+                    <span id="other-plastic-type1">OTHER PLASTIC 1</span>
+                    <span id="other-plastic-type2">OTHER PLASTIC 2</span>
+                    <span id="other-plastic-type3">OTHER PLASTIC 3</span>
+                    <span id="other-plastic-type4">OTHER PLASTIC 4</span>
+                    <span id="other-plastic-type5">OTHER PLASTIC 5</span>
+                    <span id="other-plastic-type6">OTHER PLASTIC 6</span>
+                </p>
+                <p>
+                    <span id="other-plastic-count1">000</span>
+                    <span id="other-plastic-count2">000</span>
+                    <span id="other-plastic-count3">000</span>
+                    <span id="other-plastic-count4">000</span>
+                    <span id="other-plastic-count5">000</span>
+                    <span id="other-plastic-count6">000</span>
+                </p>
+            </section>
+            <section id="confirmationscreen">
+                <h1>Not Accepting the Mission</h1>
+                <h1>Will End the Game</h1>
+                <span><button id="confirm-yes-button">Yes</button>Are You Sure?<button id="confirm-no-button">No</button></span>
+            </section>
+            <section id="statisticsscreen">
+                <h1>Sorry</h1>
+                <h1>You did not complete your mission!</h1>
+                <p>
+                    <span id="summary-plastic-type1">PLASTIC 1</span>
+                    <span id="summary-plastic-type2">PLASTIC 2</span>
+                    <span id="summary-plastic-type3">PLASTIC 3</span>
+                    <span id="summary-plastic-type4">PLASTIC 4</span>
+                    <span id="summary-plastic-type5">PLASTIC 5</span>
+                    <span id="summary-plastic-type6">PLASTIC 6</span>
+                    <span id="summary-plastic-type7">PLASTIC 7</span>
+                </p>
+                <p>
+                    <span id="summary-plastic-count1">000,000</span>
+                    <span id="summary-plastic-count2">000,000</span>
+                    <span id="summary-plastic-count3">000,000</span>
+                    <span id="summary-plastic-count4">000,000</span>
+                    <span id="summary-plastic-count5">000,000</span>
+                    <span id="summary-plastic-count6">000,000</span>
+                    <span id="summary-plastic-count7">000,000</span>
+                </p>
+            </section>
+            <section id="playagainscreen">
+                <h1>Would You Like To</h1>
+                <h1>Play Again?</h1>
+                <span><button id="play-again-yes-button">Yes</button><button id="play-again-no-button">No</button></span>
+            </section>
+            <section id="creditscreen">
+                <h1>Sea Scavenger</h1>
+                <h2>A project of Code for Tucson</h2>
+            </section>
+            <div class="worldmap"></div>
+           <footer>
                 <img src="images/CodeForTucsonHeader.png">
             </footer>    
         </div>
