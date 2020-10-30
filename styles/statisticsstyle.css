@@ -1,0 +1,10 @@
+#statisticsscreen {
+    grid-column: 2 / 7;
+    grid-row: 3 / 8;
+    border-color: black;
+    background-color: lightgray;
+    padding-left: 1em;
+    padding-right: 1em;
+    z-index: 100;
+    display: none;
+}
