@@ -1,325 +1,290 @@
 {
-    "BucketOrCrate" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "BuoysAndFloats" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "CigaretteButts" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "FishingGlowSticks" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "FishingLineLureRope" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "FishingNet" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "LollipopStickOrEarBud" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "Plastic_Beverage_Bottle" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "Plastic_FoamFoodContainer" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "PlasticBag" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "PlasticBottleCapOrLid" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "PlasticDrinkingStraw" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "PlasticLighter" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "PlasticOrFoamPlatesCupsSilverware" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "PlasticPersonalCareProduct" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "PlasticSheet" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "PlasticStraps" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "StringRingRibbon" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    },
-    "WrapperOrLabel" : 
-    { 
-        "maxCount" : 0,
-        "avgCount" : 0,
-        "products" : 
-        [
-            ""
-        ],
-        "countries" : 
-        [
-            { 
-                "name" : "",
-                "count" : 0,
-                "rank" : 0
-            }
-        ]
-    }
+    "plastics" : [
+        {
+            "plasticType" : "BucketOrCrate", 
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : 
+            [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "BuoysAndFloats",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        {
+            "plasticType" :  "CigaretteButts",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "FishingGlowSticks",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "FishingLineLureRope",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        {
+            "plasticType" : "FishingNet",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "LollipopStickOrEarBud",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "Plastic_Beverage_Bottle",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        {
+            "plasticType" : "Plastic_FoamFoodContainer",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "PlasticBag",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "PlasticBottleCapOrLid",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "PlasticDrinkingStraw",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "PlasticLighter",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "PlasticOrFoamPlatesCupsSilverware",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "PlasticPersonalCareProduct",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "PlasticSheet",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "PlasticStraps",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "StringRingRibbon",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "WrapperOrLabel",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                null
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        }
+    ]
 }
