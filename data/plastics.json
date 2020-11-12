@@ -1,11 +1,55 @@
 {
     "plastics" : [
         {
-            "plasticType" : "BucketOrCrate", 
+            "plasticType" : "Buckets", 
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Nesting Boxes",
+                "Planters",
+                "Toolboxes",
+                "Toy Boxes",
+                "Trash Cans"
+            ],
+            "countries" : 
+            [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        {
+            "plasticType" :  "Cigarette Butts",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                "Ashtrays",
+                "Construction Material",
+                "Pallets",
+                "Park Benches"
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        {
+            "plasticType" : "Crates", 
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                "Bookshelves",
+                "Furniture",
+                "Light Fixtures",
+                "Nesting Boxes",
+                "Planters",
+                "Vertical Composters",
+                "Wall Storage Units"
             ],
             "countries" : 
             [
@@ -17,11 +61,11 @@
             ]
         },
         { 
-            "plasticType" : "BuoysAndFloats",
+            "plasticType" : "Earbuds",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Speakers"
             ],
             "countries" : [
                 { 
@@ -32,41 +76,13 @@
             ]
         },
         {
-            "plasticType" :  "CigaretteButts",
+            "plasticType" : "Fishing Line",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "FishingGlowSticks",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                null
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "FishingLineLureRope",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                null
+                "Construction Material",
+                "Fish Habitat",
+                "Park Benches"
             ],
             "countries" : [
                 { 
@@ -77,11 +93,23 @@
             ]
         },
         {
-            "plasticType" : "FishingNet",
+            "plasticType" : "Fishing Nets",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Backpacks",
+                "Car Floor Mats",
+                "Construction Material",
+                "Games",
+                "Handbags",
+                "Hats",
+                "Office Chairs",
+                "Skateboards",
+                "Stockings",
+                "Sunglasses",
+                "Surfboard Fins",
+                "Swimsuits",
+                "Water Bottle Cages"
             ],
             "countries" : [
                 { 
@@ -92,11 +120,21 @@
             ]
         },
         { 
-            "plasticType" : "LollipopStickOrEarBud",
+            "plasticType" : "Floats",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Cameras",
+                "Ceiling Molding",
+                "Coat Hangers",
+                "Construction Material",
+                "Insulation",
+                "Jewelry Cases",
+                "Park Benches",
+                "Picture Frames",
+                "Planters",
+                "Surfboards",
+                "Toys"
             ],
             "countries" : [
                 { 
@@ -107,11 +145,155 @@
             ]
         },
         { 
-            "plasticType" : "Plastic_Beverage_Bottle",
+            "plasticType" : "Foam Food Containers",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Cameras",
+                "Ceiling Molding",
+                "Coat Hangers",
+                "Construction Material",
+                "Insulation",
+                "Jewelry Cases",
+                "Park Benches",
+                "Picture Frames",
+                "Planters",
+                "Surfboards",
+                "Toys"
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "Foam Plates or Cups",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                "Cameras",
+                "Ceiling Molding",
+                "Coat Hangers",
+                "Construction Material",
+                "Insulation",
+                "Jewelry Cases",
+                "Park Benches",
+                "Picture Frames",
+                "Planters",
+                "Surfboards",
+                "Toys"
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "Nylon Rope",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                "Backpacks",
+                "Car Floor Mats",
+                "Construction Material",
+                "Handbags",
+                "Stockings",
+                "Swimsuits"
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "Plastic Bags",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                "Asphalt Additive",
+                "Bollards",
+                "Construction Material",
+                "Decking",
+                "Fencing",
+                "Furniture",
+                "Mats",
+                "Mounting Blocks",
+                "Sailboats"
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "Plastic Beverage Bottles",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                "Backpacks",
+                "Bras",
+                "Construction Material",
+                "Dog Beds",
+                "Dog Collars",
+                "Dog Leashes",
+                "Door Mats",
+                "Fanny Packs",
+                "Jackets",
+                "Laptop Cases",
+                "Leggings",
+                "Lunch Bags",
+                "Pens",
+                "Sailboats",
+                "Shoe Laces",
+                "Soccer Kit",
+                "Sweatpants",
+                "Toothbrushes",
+                "Tote Bags",
+                "Toys",
+                "Travel Bags"
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "Plastic Bottle Caps",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                "Construction Material",
+                "Surfboard Fins"
+            ],
+            "countries" : [
+                { 
+                    "name" : null,
+                    "count" : 0,
+                    "rank" : 0
+                }
+            ]
+        },
+        { 
+            "plasticType" : "Plastic Drinking Straws",
+            "maxCount" : 0,
+            "avgCount" : 0,
+            "products" : [
+                "Construction Material"
             ],
             "countries" : [
                 { 
@@ -122,11 +304,19 @@
             ]
         },
         {
-            "plasticType" : "Plastic_FoamFoodContainer",
+            "plasticType" : "Plastic Food Containers",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Colanders",
+                "Construction Material",
+                "Cutting Boards",
+                "Earbuds",
+                "Food Containers",
+                "Measuring Cups",
+                "Razor Handles",
+                "Serving Spoons",
+                "Toothbrushes"
             ],
             "countries" : [
                 { 
@@ -137,11 +327,11 @@
             ]
         },
         { 
-            "plasticType" : "PlasticBag",
+            "plasticType" : "Plastic Lighters",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Construction Material"
             ],
             "countries" : [
                 { 
@@ -152,11 +342,11 @@
             ]
         },
         { 
-            "plasticType" : "PlasticBottleCapOrLid",
+            "plasticType" : "Plastic Personal Care Products",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Construction Material"
             ],
             "countries" : [
                 { 
@@ -167,11 +357,19 @@
             ]
         },
         { 
-            "plasticType" : "PlasticDrinkingStraw",
+            "plasticType" : "Plastic Plates or Cups",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Collanders",
+                "Construction Material",
+                "Cutting Boards",
+                "Earbuds",
+                "Food Containers",
+                "Measuring Cups",
+                "Razor Handles",
+                "Serving Spoons",
+                "Toothbrushes"
             ],
             "countries" : [
                 { 
@@ -182,11 +380,14 @@
             ]
         },
         { 
-            "plasticType" : "PlasticLighter",
+            "plasticType" : "Plastic Rings",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Construction Material",
+                "Furniture",
+                "Park Benches",
+                "Plastic Lumber"
             ],
             "countries" : [
                 { 
@@ -197,11 +398,11 @@
             ]
         },
         { 
-            "plasticType" : "PlasticOrFoamPlatesCupsSilverware",
+            "plasticType" : "Plastic Sheet",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Construction Material"
             ],
             "countries" : [
                 { 
@@ -212,11 +413,11 @@
             ]
         },
         { 
-            "plasticType" : "PlasticPersonalCareProduct",
+            "plasticType" : "Plastic Straps",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
+                "Construction Material"
             ],
             "countries" : [
                 { 
@@ -227,56 +428,18 @@
             ]
         },
         { 
-            "plasticType" : "PlasticSheet",
+            "plasticType" : "Wrappers or Labels",
             "maxCount" : 0,
             "avgCount" : 0,
             "products" : [
-                null
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "PlasticStraps",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                null
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "StringRingRibbon",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                null
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "WrapperOrLabel",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                null
+                "Asphalt Additive",
+                "Bollards",
+                "Construction Material",
+                "Decking",
+                "Fencing",
+                "Furniture",
+                "Houses",
+                "Mounting Blocks"
             ],
             "countries" : [
                 { 
