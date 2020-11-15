@@ -1,453 +1,2475 @@
-{
-    "plastics" : [
-        {
-            "plasticType" : "Buckets", 
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Nesting Boxes",
-                "Planters",
-                "Toolboxes",
-                "Toy Boxes",
-                "Trash Cans"
-            ],
-            "countries" : 
-            [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        {
-            "plasticType" :  "Cigarette Butts",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Ashtrays",
-                "Construction Material",
-                "Pallets",
-                "Park Benches"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        {
-            "plasticType" : "Crates", 
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Bookshelves",
-                "Furniture",
-                "Light Fixtures",
-                "Nesting Boxes",
-                "Planters",
-                "Vertical Composters",
-                "Wall Storage Units"
-            ],
-            "countries" : 
-            [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Earbuds",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Speakers"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        {
-            "plasticType" : "Fishing Line",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Construction Material",
-                "Fish Habitat",
-                "Park Benches"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        {
-            "plasticType" : "Fishing Nets",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Backpacks",
-                "Car Floor Mats",
-                "Construction Material",
-                "Games",
-                "Handbags",
-                "Hats",
-                "Office Chairs",
-                "Skateboards",
-                "Stockings",
-                "Sunglasses",
-                "Surfboard Fins",
-                "Swimsuits",
-                "Water Bottle Cages"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Floats",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Cameras",
-                "Ceiling Molding",
-                "Coat Hangers",
-                "Construction Material",
-                "Insulation",
-                "Jewelry Cases",
-                "Park Benches",
-                "Picture Frames",
-                "Planters",
-                "Surfboards",
-                "Toys"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Foam Food Containers",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Cameras",
-                "Ceiling Molding",
-                "Coat Hangers",
-                "Construction Material",
-                "Insulation",
-                "Jewelry Cases",
-                "Park Benches",
-                "Picture Frames",
-                "Planters",
-                "Surfboards",
-                "Toys"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Foam Plates or Cups",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Cameras",
-                "Ceiling Molding",
-                "Coat Hangers",
-                "Construction Material",
-                "Insulation",
-                "Jewelry Cases",
-                "Park Benches",
-                "Picture Frames",
-                "Planters",
-                "Surfboards",
-                "Toys"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Nylon Rope",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Backpacks",
-                "Car Floor Mats",
-                "Construction Material",
-                "Handbags",
-                "Stockings",
-                "Swimsuits"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Bags",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Asphalt Additive",
-                "Bollards",
-                "Construction Material",
-                "Decking",
-                "Fencing",
-                "Furniture",
-                "Mats",
-                "Mounting Blocks",
-                "Sailboats"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Beverage Bottles",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Backpacks",
-                "Bras",
-                "Construction Material",
-                "Dog Beds",
-                "Dog Collars",
-                "Dog Leashes",
-                "Door Mats",
-                "Fanny Packs",
-                "Jackets",
-                "Laptop Cases",
-                "Leggings",
-                "Lunch Bags",
-                "Pens",
-                "Sailboats",
-                "Shoe Laces",
-                "Soccer Kit",
-                "Sweatpants",
-                "Toothbrushes",
-                "Tote Bags",
-                "Toys",
-                "Travel Bags"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Bottle Caps",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Construction Material",
-                "Surfboard Fins"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Drinking Straws",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Construction Material"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        {
-            "plasticType" : "Plastic Food Containers",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Colanders",
-                "Construction Material",
-                "Cutting Boards",
-                "Earbuds",
-                "Food Containers",
-                "Measuring Cups",
-                "Razor Handles",
-                "Serving Spoons",
-                "Toothbrushes"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Lighters",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Construction Material"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Personal Care Products",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Construction Material"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Plates or Cups",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Collanders",
-                "Construction Material",
-                "Cutting Boards",
-                "Earbuds",
-                "Food Containers",
-                "Measuring Cups",
-                "Razor Handles",
-                "Serving Spoons",
-                "Toothbrushes"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Rings",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Construction Material",
-                "Furniture",
-                "Park Benches",
-                "Plastic Lumber"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Sheet",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Construction Material"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Plastic Straps",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Construction Material"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        },
-        { 
-            "plasticType" : "Wrappers or Labels",
-            "maxCount" : 0,
-            "avgCount" : 0,
-            "products" : [
-                "Asphalt Additive",
-                "Bollards",
-                "Construction Material",
-                "Decking",
-                "Fencing",
-                "Furniture",
-                "Houses",
-                "Mounting Blocks"
-            ],
-            "countries" : [
-                { 
-                    "name" : null,
-                    "count" : 0,
-                    "rank" : 0
-                }
-            ]
-        }
-    ]
-}
+[
+    {
+        "plasticType" : "Buckets", 
+        "maxCount" : 962,
+        "medianCount" : 5,
+        "products" : [
+            "Nesting Boxes",
+            "Planters",
+            "Toolboxes",
+            "Toy Boxes",
+            "Trash Cans"
+        ],
+        "countries" : [
+            { 
+                "name" : "Italy",
+                "count" : 962,
+                "rank" : 1
+            },
+            { 
+                "name" : "Greece",
+                "count" : 42,
+                "rank" : 2
+            },
+            { 
+                "name" : "Bulgaria",
+                "count" : 37,
+                "rank" : 3
+            },
+            { 
+                "name" : "Romania",
+                "count" : 31,
+                "rank" : 4
+            },
+            { 
+                "name" : "Switzerland",
+                "count" : 20,
+                "rank" : 5
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 17,
+                "rank" : 6
+            },
+            { 
+                "name" : "Denmark",
+                "count" : 16,
+                "rank" : 7
+            },
+            { 
+                "name" : "Cyprus",
+                "count" : 5,
+                "rank" : 8
+            },
+            { 
+                "name" : "France",
+                "count" : 2,
+                "rank" : 9
+            },
+            { 
+                "name" : "Slovenia",
+                "count" : 2,
+                "rank" : 9
+            },
+            { 
+                "name" : "Estonia",
+                "count" : 2,
+                "rank" : 9
+            },
+            { 
+                "name" : "Russia",
+                "count" : 2,
+                "rank" : 9
+            },
+            { 
+                "name" : "Portugal",
+                "count" : 1,
+                "rank" : 13
+            },
+            { 
+                "name" : "Norway",
+                "count" : 1,
+                "rank" : 13
+            },
+            { 
+                "name" : "Spain",
+                "count" : 1,
+                "rank" : 13
+            }
+        ]
+    },
+    {
+        "plasticType" :  "Cigarette Butts",
+        "maxCount" : 3664162,
+        "medianCount" : 128829,
+        "products" : [
+            "Ashtrays",
+            "Construction Material",
+            "Pallets",
+            "Park Benches"
+        ],
+        "countries" : [
+            { 
+                "name" : "Ghana",
+                "count" : 3664162,
+                "rank" : 1
+            },
+            { 
+                "name" : "United States",
+                "count" : 3046535,
+                "rank" : 2
+            },
+            { 
+                "name" : "Canada",
+                "count" : 873554,
+                "rank" : 3
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 854377,
+                "rank" : 4
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 812026,
+                "rank" : 5
+            },
+            { 
+                "name" : "United Arab Emirates",
+                "count" : 396227,
+                "rank" : 6
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 244247,
+                "rank" : 7
+            },
+            { 
+                "name" : "Chile",
+                "count" : 179618,
+                "rank" : 8
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 159695,
+                "rank" : 9
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 148997,
+                "rank" : 10
+            },
+            { 
+                "name" : "Indonesia",
+                "count" : 108661,
+                "rank" : 11
+            },
+            { 
+                "name" : "Germany",
+                "count" : 75902,
+                "rank" : 12
+            },
+            { 
+                "name" : "Spain",
+                "count" : 72940,
+                "rank" : 13
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 65115,
+                "rank" : 14
+            },
+            { 
+                "name" : "South Africa",
+                "count" : 64138,
+                "rank" : 15
+            },
+            { 
+                "name" : "Singapore",
+                "count" : 63711,
+                "rank" : 16
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 62023,
+                "rank" : 17
+            },
+            { 
+                "name" : "Brazil",
+                "count" : 59871,
+                "rank" : 18
+            },
+            { 
+                "name" : "Greece",
+                "count" : 57875,
+                "rank" : 19
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 57759,
+                "rank" : 20
+            }
+        ]
+    },
+    {
+        "plasticType" : "Crates", 
+        "maxCount" : 962,
+        "medianCount" : 5,
+        "products" : [
+            "Bookshelves",
+            "Furniture",
+            "Light Fixtures",
+            "Nesting Boxes",
+            "Planters",
+            "Vertical Composters",
+            "Wall Storage Units"
+        ],
+        "countries" : [
+            { 
+                "name" : "Italy",
+                "count" : 962,
+                "rank" : 1
+            },
+            { 
+                "name" : "Greece",
+                "count" : 42,
+                "rank" : 2
+            },
+            { 
+                "name" : "Bulgaria",
+                "count" : 37,
+                "rank" : 3
+            },
+            { 
+                "name" : "Romania",
+                "count" : 31,
+                "rank" : 4
+            },
+            { 
+                "name" : "Switzerland",
+                "count" : 20,
+                "rank" : 5
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 17,
+                "rank" : 6
+            },
+            { 
+                "name" : "Denmark",
+                "count" : 16,
+                "rank" : 7
+            },
+            { 
+                "name" : "Cyprus",
+                "count" : 5,
+                "rank" : 8
+            },
+            { 
+                "name" : "France",
+                "count" : 2,
+                "rank" : 9
+            },
+            { 
+                "name" : "Slovenia",
+                "count" : 2,
+                "rank" : 9
+            },
+            { 
+                "name" : "Estonia",
+                "count" : 2,
+                "rank" : 9
+            },
+            { 
+                "name" : "Russia",
+                "count" : 2,
+                "rank" : 9
+            },
+            { 
+                "name" : "Portugal",
+                "count" : 1,
+                "rank" : 13
+            },
+            { 
+                "name" : "Norway",
+                "count" : 1,
+                "rank" : 13
+            },
+            { 
+                "name" : "Spain",
+                "count" : 1,
+                "rank" : 13
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Earbuds",
+        "maxCount" : 29986,
+        "medianCount" : 624,
+        "products" : [
+            "Speakers"
+        ],
+        "countries" : [
+            { 
+                "name" : "Italy",
+                "count" : 29986,
+                "rank" : 1
+            },
+            { 
+                "name" : "France",
+                "count" : 11310,
+                "rank" : 2
+            },
+            { 
+                "name" : "Portugal",
+                "count" : 4116,
+                "rank" : 3
+            },
+            { 
+                "name" : "Denmark",
+                "count" : 2284,
+                "rank" : 4
+            },
+            { 
+                "name" : "Switzerland",
+                "count" : 1473,
+                "rank" : 5
+            },
+            { 
+                "name" : "Spain",
+                "count" : 1384,
+                "rank" : 6
+            },
+            { 
+                "name" : "Romania",
+                "count" : 1300,
+                "rank" : 7
+            },
+            { 
+                "name" : "Croatia",
+                "count" : 1008,
+                "rank" : 8
+            },
+            { 
+                "name" : "Slovenia",
+                "count" : 931,
+                "rank" : 9
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 801,
+                "rank" : 10
+            },
+            { 
+                "name" : "Greece",
+                "count" : 446,
+                "rank" : 11
+            },
+            { 
+                "name" : "Morocco",
+                "count" : 350,
+                "rank" : 12
+            },
+            { 
+                "name" : "Brazil",
+                "count" : 323,
+                "rank" : 13
+            },
+            { 
+                "name" : "Algeria",
+                "count" : 175,
+                "rank" : 14
+            },
+            { 
+                "name" : "Bulgaria",
+                "count" : 136,
+                "rank" : 15
+            },
+            { 
+                "name" : "Netherlands",
+                "count" : 89,
+                "rank" : 16
+            },
+            { 
+                "name" : "Russia",
+                "count" : 89,
+                "rank" : 16
+            },
+            { 
+                "name" : "Germany",
+                "count" : 44,
+                "rank" : 18
+            },
+            { 
+                "name" : "Cyprus",
+                "count" : 39,
+                "rank" : 19
+            },
+            { 
+                "name" : "Georgia",
+                "count" : 34,
+                "rank" : 20
+            }
+        ]
+    },
+    {
+        "plasticType" : "Fishing Line",
+        "maxCount" : 252040,
+        "medianCount" : 15299,
+        "products" : [
+            "Construction Material",
+            "Fish Habitat",
+            "Park Benches"
+        ],
+        "countries" : [
+            { 
+                "name" : "United States",
+                "count" : 252040,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 78042,
+                "rank" : 2
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 47689,
+                "rank" : 3
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 40631,
+                "rank" : 4
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 30271,
+                "rank" : 5
+            },
+            { 
+                "name" : "Chile",
+                "count" : 28665,
+                "rank" : 6
+            },
+            { 
+                "name" : "Canada",
+                "count" : 22236,
+                "rank" : 7
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 20062,
+                "rank" : 8
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 17969,
+                "rank" : 9
+            },
+            { 
+                "name" : "South Korea",
+                "count" : 15487,
+                "rank" : 10
+            },
+            { 
+                "name" : "China",
+                "count" : 15110,
+                "rank" : 11
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 13522,
+                "rank" : 12
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 13226,
+                "rank" : 13
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 12838,
+                "rank" : 14
+            },
+            { 
+                "name" : "South Africa",
+                "count" : 12224,
+                "rank" : 15
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 10905,
+                "rank" : 16
+            },
+            { 
+                "name" : "France",
+                "count" : 10071,
+                "rank" : 17
+            },
+            { 
+                "name" : "India",
+                "count" : 10071,
+                "rank" : 17
+            },
+            { 
+                "name" : "Japan",
+                "count" : 9276,
+                "rank" : 19
+            },
+            { 
+                "name" : "Curacao",
+                "count" : 8618,
+                "rank" : 20
+            }
+        ]
+    },
+    {
+        "plasticType" : "Fishing Nets",
+        "maxCount" : 81344,
+        "medianCount" : 8005,
+        "products" : [
+            "Backpacks",
+            "Car Floor Mats",
+            "Construction Material",
+            "Games",
+            "Handbags",
+            "Hats",
+            "Office Chairs",
+            "Skateboards",
+            "Stockings",
+            "Sunglasses",
+            "Surfboard Fins",
+            "Swimsuits",
+            "Water Bottle Cages"
+        ],
+        "countries" : [
+            { 
+                "name" : "United States",
+                "count" : 81344,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 41129,
+                "rank" : 2
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 29374,
+                "rank" : 3
+            },
+            { 
+                "name" : "China",
+                "count" : 24479,
+                "rank" : 4
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 18212,
+                "rank" : 5
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 14774,
+                "rank" : 6
+            },
+            { 
+                "name" : "Italy",
+                "count" : 14280,
+                "rank" : 7
+            },
+            { 
+                "name" : "Malawi",
+                "count" : 10987,
+                "rank" : 8
+            },
+            { 
+                "name" : "Chile",
+                "count" : 10975,
+                "rank" : 9
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 8530,
+                "rank" : 10
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 7480,
+                "rank" : 11
+            },
+            { 
+                "name" : "South Korea",
+                "count" : 7007,
+                "rank" : 12
+            },
+            { 
+                "name" : "Peru",
+                "count" : 6997,
+                "rank" : 13
+            },
+            { 
+                "name" : "France",
+                "count" : 6175,
+                "rank" : 14
+            },
+            { 
+                "name" : "India",
+                "count" : 5925,
+                "rank" : 15
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 4488,
+                "rank" : 16
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 4066,
+                "rank" : 17
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 3784,
+                "rank" : 18
+            },
+            { 
+                "name" : "Canada",
+                "count" : 3631,
+                "rank" : 19
+            },
+            { 
+                "name" : "Spain",
+                "count" : 3619,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Floats",
+        "maxCount" : 43708,
+        "medianCount" : 5377,
+        "products" : [
+            "Cameras",
+            "Ceiling Molding",
+            "Coat Hangers",
+            "Construction Material",
+            "Insulation",
+            "Jewelry Cases",
+            "Park Benches",
+            "Picture Frames",
+            "Planters",
+            "Surfboards",
+            "Toys"
+        ],
+        "countries" : [
+            { 
+                "name" : "China",
+                "count" : 43708,
+                "rank" : 1
+            },
+            { 
+                "name" : "United States",
+                "count" : 31932,
+                "rank" : 2
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 29834,
+                "rank" : 3
+            },
+            { 
+                "name" : "Chile",
+                "count" : 15085,
+                "rank" : 4
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 12478,
+                "rank" : 5
+            },
+            { 
+                "name" : "Vietnam",
+                "count" : 11985,
+                "rank" : 6
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 9777,
+                "rank" : 7
+            },
+            { 
+                "name" : "South Korea",
+                "count" : 7557,
+                "rank" : 8
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 6838,
+                "rank" : 9
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 5666,
+                "rank" : 10
+            },
+            { 
+                "name" : "Canada",
+                "count" : 5088,
+                "rank" : 11
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 4068,
+                "rank" : 12
+            },
+            { 
+                "name" : "India",
+                "count" : 3705,
+                "rank" : 13
+            },
+            { 
+                "name" : "Japan",
+                "count" : 3497,
+                "rank" : 14
+            },
+            { 
+                "name" : "Peru",
+                "count" : 2951,
+                "rank" : 15
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 2072,
+                "rank" : 16
+            },
+            { 
+                "name" : "Australia",
+                "count" : 1669,
+                "rank" : 17
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 1509,
+                "rank" : 18
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 1410,
+                "rank" : 19
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 1365,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Foam Food Containers",
+        "maxCount" : 996202,
+        "medianCount" : 34449,
+        "products" : [
+            "Cameras",
+            "Ceiling Molding",
+            "Coat Hangers",
+            "Construction Material",
+            "Insulation",
+            "Jewelry Cases",
+            "Park Benches",
+            "Picture Frames",
+            "Planters",
+            "Surfboards",
+            "Toys"
+        ],
+        "countries" : [
+            { 
+                "name" : "Ghana",
+                "count" : 996202,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 521868,
+                "rank" : 2
+            },
+            { 
+                "name" : "United States",
+                "count" : 340111,
+                "rank" : 3
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 232562,
+                "rank" : 4
+            },
+            { 
+                "name" : "India",
+                "count" : 86934,
+                "rank" : 5
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 85283,
+                "rank" : 6
+            },
+            { 
+                "name" : "China",
+                "count" : 64089,
+                "rank" : 7
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 58137,
+                "rank" : 8
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 53538,
+                "rank" : 9
+            },
+            { 
+                "name" : "Canada",
+                "count" : 34603,
+                "rank" : 10
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 34295,
+                "rank" : 11
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 34212,
+                "rank" : 12
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 31546,
+                "rank" : 13
+            },
+            { 
+                "name" : "Japan",
+                "count" : 27874,
+                "rank" : 14
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 25372,
+                "rank" : 15
+            },
+            { 
+                "name" : "Chile",
+                "count" : 23216,
+                "rank" : 16
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 19950,
+                "rank" : 17
+            },
+            { 
+                "name" : "Indonesia",
+                "count" : 19667,
+                "rank" : 18
+            },
+            { 
+                "name" : "Panama",
+                "count" : 17727,
+                "rank" : 19
+            },
+            { 
+                "name" : "Trinidad and Tobago",
+                "count" : 15775,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Foam Plates or Cups",
+        "maxCount" : 1828998,
+        "medianCount" : 88833,
+        "products" : [
+            "Cameras",
+            "Ceiling Molding",
+            "Coat Hangers",
+            "Construction Material",
+            "Insulation",
+            "Jewelry Cases",
+            "Park Benches",
+            "Picture Frames",
+            "Planters",
+            "Surfboards",
+            "Toys"
+        ],
+        "countries" : [
+            { 
+                "name" : "Ghana",
+                "count" : 1828998,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 867346,
+                "rank" : 2
+            },
+            { 
+                "name" : "United States",
+                "count" : 493995,
+                "rank" : 3
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 306616,
+                "rank" : 4
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 201040,
+                "rank" : 5
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 132795,
+                "rank" : 6
+            },
+            { 
+                "name" : "India",
+                "count" : 115600,
+                "rank" : 7
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 110011,
+                "rank" : 8
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 101471,
+                "rank" : 9
+            },
+            { 
+                "name" : "Peru",
+                "count" : 89741,
+                "rank" : 10
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 87924,
+                "rank" : 11
+            },
+            { 
+                "name" : "China",
+                "count" : 76964,
+                "rank" : 12
+            },
+            { 
+                "name" : "Canada",
+                "count" : 41979,
+                "rank" : 13
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 41082,
+                "rank" : 14
+            },
+            { 
+                "name" : "Malawi",
+                "count" : 38282,
+                "rank" : 15
+            },
+            { 
+                "name" : "Trinidad and Tobago",
+                "count" : 36481,
+                "rank" : 16
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 32044,
+                "rank" : 17
+            },
+            { 
+                "name" : "Singapore",
+                "count" : 27377,
+                "rank" : 18
+            },
+            { 
+                "name" : "Panama",
+                "count" : 25633,
+                "rank" : 19
+            },
+            { 
+                "name" : "Chile",
+                "count" : 22772,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Nylon Rope",
+        "maxCount" : 252040,
+        "medianCount" : 15299,
+        "products" : [
+            "Backpacks",
+            "Car Floor Mats",
+            "Construction Material",
+            "Handbags",
+            "Stockings",
+            "Swimsuits"
+        ],
+        "countries" : [
+            { 
+                "name" : "United States",
+                "count" : 252040,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 78042,
+                "rank" : 2
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 47689,
+                "rank" : 3
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 40631,
+                "rank" : 4
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 30271,
+                "rank" : 5
+            },
+            { 
+                "name" : "Chile",
+                "count" : 28665,
+                "rank" : 6
+            },
+            { 
+                "name" : "Canada",
+                "count" : 22236,
+                "rank" : 7
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 20062,
+                "rank" : 8
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 17969,
+                "rank" : 9
+            },
+            { 
+                "name" : "South Korea",
+                "count" : 15487,
+                "rank" : 10
+            },
+            { 
+                "name" : "China",
+                "count" : 15110,
+                "rank" : 11
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 13522,
+                "rank" : 12
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 13226,
+                "rank" : 13
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 12838,
+                "rank" : 14
+            },
+            { 
+                "name" : "South Africa",
+                "count" : 12224,
+                "rank" : 15
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 10905,
+                "rank" : 16
+            },
+            { 
+                "name" : "France",
+                "count" : 10071,
+                "rank" : 17
+            },
+            { 
+                "name" : "India",
+                "count" : 10071,
+                "rank" : 17
+            },
+            { 
+                "name" : "Japan",
+                "count" : 9276,
+                "rank" : 19
+            },
+            { 
+                "name" : "Curacao",
+                "count" : 8618,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Bags",
+        "maxCount" : 1518112,
+        "medianCount" : 73767,
+        "products" : [
+            "Asphalt Additive",
+            "Bollards",
+            "Construction Material",
+            "Decking",
+            "Fencing",
+            "Furniture",
+            "Mats",
+            "Mounting Blocks",
+            "Sailboats"
+        ],
+        "countries" : [
+            { 
+                "name" : "Philippines",
+                "count" : 1518112,
+                "rank" : 1
+            },
+            { 
+                "name" : "United States",
+                "count" : 574797,
+                "rank" : 2
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 405456,
+                "rank" : 3
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 277596,
+                "rank" : 4
+            },
+            { 
+                "name" : "India",
+                "count" : 232549,
+                "rank" : 5
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 134940,
+                "rank" : 6
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 108989,
+                "rank" : 7
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 108175,
+                "rank" : 8
+            },
+            { 
+                "name" : "Malawi",
+                "count" : 81154,
+                "rank" : 9
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 75611,
+                "rank" : 10
+            },
+            { 
+                "name" : "China",
+                "count" : 71922,
+                "rank" : 11
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 70970,
+                "rank" : 12
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 61641,
+                "rank" : 13
+            },
+            { 
+                "name" : "Canada",
+                "count" : 61063,
+                "rank" : 14
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 50793,
+                "rank" : 15
+            },
+            { 
+                "name" : "Chile",
+                "count" : 44208,
+                "rank" : 16
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 43970,
+                "rank" : 17
+            },
+            { 
+                "name" : "Peru",
+                "count" : 38103,
+                "rank" : 18
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 36485,
+                "rank" : 19
+            },
+            { 
+                "name" : "Singapore",
+                "count" : 35120,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Beverage Bottles",
+        "maxCount" : 785408,
+        "medianCount" : 117962,
+        "products" : [
+            "Backpacks",
+            "Bras",
+            "Construction Material",
+            "Dog Beds",
+            "Dog Collars",
+            "Dog Leashes",
+            "Door Mats",
+            "Fanny Packs",
+            "Jackets",
+            "Laptop Cases",
+            "Leggings",
+            "Lunch Bags",
+            "Pens",
+            "Sailboats",
+            "Shoe Laces",
+            "Soccer Kit",
+            "Sweatpants",
+            "Toothbrushes",
+            "Tote Bags",
+            "Toys",
+            "Travel Bags"
+        ],
+        "countries" : [
+            { 
+                "name" : "Jamaica",
+                "count" : 785408,
+                "rank" : 1
+            },
+            { 
+                "name" : "United States",
+                "count" : 753841,
+                "rank" : 2
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 627877,
+                "rank" : 3
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 604268,
+                "rank" : 4
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 249266,
+                "rank" : 5
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 187963,
+                "rank" : 6
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 179539,
+                "rank" : 7
+            },
+            { 
+                "name" : "China",
+                "count" : 164406,
+                "rank" : 8
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 150655,
+                "rank" : 9
+            },
+            { 
+                "name" : "Panama",
+                "count" : 132322,
+                "rank" : 10
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 103602,
+                "rank" : 11
+            },
+            { 
+                "name" : "Trinidad and Tobago",
+                "count" : 93476,
+                "rank" : 12
+            },
+            { 
+                "name" : "Guatemala",
+                "count" : 86594,
+                "rank" : 13
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 86535,
+                "rank" : 14
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 86191,
+                "rank" : 15
+            },
+            { 
+                "name" : "India",
+                "count" : 76491,
+                "rank" : 16
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 66252,
+                "rank" : 17
+            },
+            { 
+                "name" : "Singapore",
+                "count" : 58307,
+                "rank" : 18
+            },
+            { 
+                "name" : "Canada",
+                "count" : 55666,
+                "rank" : 19
+            },
+            { 
+                "name" : "Costa Rica",
+                "count" : 39087,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Bottle Caps",
+        "maxCount" : 1299959,
+        "medianCount" : 100637,
+        "products" : [
+            "Construction Material",
+            "Surfboard Fins"
+        ],
+        "countries" : [
+            { 
+                "name" : "United States",
+                "count" : 1299959,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 1067501,
+                "rank" : 2
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 651452,
+                "rank" : 3
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 265902,
+                "rank" : 4
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 258954,
+                "rank" : 5
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 171796,
+                "rank" : 6
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 142413,
+                "rank" : 7
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 139809,
+                "rank" : 8
+            },
+            { 
+                "name" : "China",
+                "count" : 129628,
+                "rank" : 9
+            },
+            { 
+                "name" : "Canada",
+                "count" : 102285,
+                "rank" : 10
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 98988,
+                "rank" : 11
+            },
+            { 
+                "name" : "India",
+                "count" : 94552,
+                "rank" : 12
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 88807,
+                "rank" : 13
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 75210,
+                "rank" : 14
+            },
+            { 
+                "name" : "Chile",
+                "count" : 64132,
+                "rank" : 15
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 63534,
+                "rank" : 16
+            },
+            { 
+                "name" : "South Africa",
+                "count" : 59056,
+                "rank" : 17
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 49457,
+                "rank" : 18
+            },
+            { 
+                "name" : "Peru",
+                "count" : 48645,
+                "rank" : 19
+            },
+            { 
+                "name" : "Costa Rica",
+                "count" : 42105,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Drinking Straws",
+        "maxCount" : 2997454,
+        "medianCount" : 32915,
+        "products" : [
+            "Construction Material"
+        ],
+        "countries" : [
+            { 
+                "name" : "Ghana",
+                "count" : 2997454,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 578646,
+                "rank" : 2
+            },
+            { 
+                "name" : "United States",
+                "count" : 484522,
+                "rank" : 3
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 94288,
+                "rank" : 4
+            },
+            { 
+                "name" : "China",
+                "count" : 90464,
+                "rank" : 5
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 56041,
+                "rank" : 6
+            },
+            { 
+                "name" : "Canada",
+                "count" : 43817,
+                "rank" : 7
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 36459,
+                "rank" : 8
+            },
+            { 
+                "name" : "Singapore",
+                "count" : 34982,
+                "rank" : 9
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 33037,
+                "rank" : 10
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 32792,
+                "rank" : 11
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 31459,
+                "rank" : 12
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 28238,
+                "rank" : 13
+            },
+            { 
+                "name" : "India",
+                "count" : 27637,
+                "rank" : 14
+            },
+            { 
+                "name" : "South Africa",
+                "count" : 27230,
+                "rank" : 15
+            },
+            { 
+                "name" : "Indonesia",
+                "count" : 26347,
+                "rank" : 16
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 26062,
+                "rank" : 17
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 25462,
+                "rank" : 18
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 22207,
+                "rank" : 19
+            },
+            { 
+                "name" : "Spain",
+                "count" : 14583,
+                "rank" : 20
+            }
+        ]
+    },
+    {
+        "plasticType" : "Plastic Food Containers",
+        "maxCount" : 996202,
+        "medianCount" : 34449,
+        "products" : [
+            "Colanders",
+            "Construction Material",
+            "Cutting Boards",
+            "Earbuds",
+            "Food Containers",
+            "Measuring Cups",
+            "Razor Handles",
+            "Serving Spoons",
+            "Toothbrushes"
+        ],
+        "countries" : [
+            { 
+                "name" : "Ghana",
+                "count" : 996202,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 521868,
+                "rank" : 2
+            },
+            { 
+                "name" : "United States",
+                "count" : 340111,
+                "rank" : 3
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 232562,
+                "rank" : 4
+            },
+            { 
+                "name" : "India",
+                "count" : 86934,
+                "rank" : 5
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 85283,
+                "rank" : 6
+            },
+            { 
+                "name" : "China",
+                "count" : 64089,
+                "rank" : 7
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 58137,
+                "rank" : 8
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 53538,
+                "rank" : 9
+            },
+            { 
+                "name" : "Canada",
+                "count" : 34603,
+                "rank" : 10
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 34295,
+                "rank" : 11
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 34212,
+                "rank" : 12
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 31546,
+                "rank" : 13
+            },
+            { 
+                "name" : "Japan",
+                "count" : 27874,
+                "rank" : 14
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 25372,
+                "rank" : 15
+            },
+            { 
+                "name" : "Chile",
+                "count" : 23216,
+                "rank" : 16
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 19950,
+                "rank" : 17
+            },
+            { 
+                "name" : "Indonesia",
+                "count" : 19667,
+                "rank" : 18
+            },
+            { 
+                "name" : "Panama",
+                "count" : 17727,
+                "rank" : 19
+            },
+            { 
+                "name" : "Trinidad and Tobago",
+                "count" : 15775,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Lighters",
+        "maxCount" : 60803,
+        "medianCount" : 3800,
+        "products" : [
+            "Construction Material"
+        ],
+        "countries" : [
+            { 
+                "name" : "Philippines",
+                "count" : 60803,
+                "rank" : 1
+            },
+            { 
+                "name" : "United States",
+                "count" : 35730,
+                "rank" : 2
+            },
+            { 
+                "name" : "China",
+                "count" : 18763,
+                "rank" : 3
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 12091,
+                "rank" : 4
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 6424,
+                "rank" : 5
+            },
+            { 
+                "name" : "India",
+                "count" : 6351,
+                "rank" : 6
+            },
+            { 
+                "name" : "Chile",
+                "count" : 5347,
+                "rank" : 7
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 5058,
+                "rank" : 8
+            },
+            { 
+                "name" : "Japan",
+                "count" : 4439,
+                "rank" : 9
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 4056,
+                "rank" : 10
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 3543,
+                "rank" : 11
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 3302,
+                "rank" : 12
+            },
+            { 
+                "name" : "Singapore",
+                "count" : 2873,
+                "rank" : 13
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 2832,
+                "rank" : 14
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 2731,
+                "rank" : 15
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 2527,
+                "rank" : 16
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 2173,
+                "rank" : 17
+            },
+            { 
+                "name" : "Peru",
+                "count" : 2007,
+                "rank" : 18
+            },
+            { 
+                "name" : "Greece",
+                "count" : 1958,
+                "rank" : 19
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 1636,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Personal Care Products",
+        "maxCount" : 284593,
+        "medianCount" : 9728,
+        "products" : [
+            "Construction Material"
+        ],
+        "countries" : [
+            { 
+                "name" : "Philippines",
+                "count" : 284593,
+                "rank" : 1
+            },
+            { 
+                "name" : "United States",
+                "count" : 86960,
+                "rank" : 2
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 78624,
+                "rank" : 3
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 44981,
+                "rank" : 4
+            },
+            { 
+                "name" : "Malawi",
+                "count" : 34162,
+                "rank" : 5
+            },
+            { 
+                "name" : "India",
+                "count" : 12702,
+                "rank" : 6
+            },
+            { 
+                "name" : "Canada",
+                "count" : 12325,
+                "rank" : 7
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 12213,
+                "rank" : 8
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 10605,
+                "rank" : 9
+            },
+            { 
+                "name" : "Peru",
+                "count" : 9823,
+                "rank" : 10
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 9633,
+                "rank" : 11
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 6662,
+                "rank" : 12
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 6250,
+                "rank" : 13
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 5376,
+                "rank" : 14
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 4788,
+                "rank" : 15
+            },
+            { 
+                "name" : "Chile",
+                "count" : 4278,
+                "rank" : 16
+            },
+            { 
+                "name" : "Panama",
+                "count" : 4215,
+                "rank" : 17
+            },
+            { 
+                "name" : "China",
+                "count" : 4093,
+                "rank" : 18
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 3952,
+                "rank" : 19
+            },
+            { 
+                "name" : "Italy",
+                "count" : 3930,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Plates or Cups",
+        "maxCount" : 1828998,
+        "medianCount" : 88833,
+        "products" : [
+            "Collanders",
+            "Construction Material",
+            "Cutting Boards",
+            "Earbuds",
+            "Food Containers",
+            "Measuring Cups",
+            "Razor Handles",
+            "Serving Spoons",
+            "Toothbrushes"
+        ],
+        "countries" : [
+            { 
+                "name" : "Ghana",
+                "count" : 1828998,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 867346,
+                "rank" : 2
+            },
+            { 
+                "name" : "United States",
+                "count" : 493995,
+                "rank" : 3
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 306616,
+                "rank" : 4
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 201040,
+                "rank" : 5
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 132795,
+                "rank" : 6
+            },
+            { 
+                "name" : "India",
+                "count" : 115600,
+                "rank" : 7
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 110011,
+                "rank" : 8
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 101471,
+                "rank" : 9
+            },
+            { 
+                "name" : "Peru",
+                "count" : 89741,
+                "rank" : 10
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 87924,
+                "rank" : 11
+            },
+            { 
+                "name" : "China",
+                "count" : 76964,
+                "rank" : 12
+            },
+            { 
+                "name" : "Canada",
+                "count" : 41979,
+                "rank" : 13
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 41082,
+                "rank" : 14
+            },
+            { 
+                "name" : "Malawi",
+                "count" : 38282,
+                "rank" : 15
+            },
+            { 
+                "name" : "Trinidad and Tobago",
+                "count" : 36481,
+                "rank" : 16
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 32044,
+                "rank" : 17
+            },
+            { 
+                "name" : "Singapore",
+                "count" : 27377,
+                "rank" : 18
+            },
+            { 
+                "name" : "Panama",
+                "count" : 25633,
+                "rank" : 19
+            },
+            { 
+                "name" : "Chile",
+                "count" : 22772,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Rings",
+        "maxCount" : 51950,
+        "medianCount" : 3389,
+        "products" : [
+            "Construction Material",
+            "Furniture",
+            "Park Benches",
+            "Plastic Lumber"
+        ],
+        "countries" : [
+            { 
+                "name" : "Philippines",
+                "count" : 51950,
+                "rank" : 1
+            },
+            { 
+                "name" : "United States",
+                "count" : 22267,
+                "rank" : 2
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 9222,
+                "rank" : 3
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 7653,
+                "rank" : 4
+            },
+            { 
+                "name" : "Italy",
+                "count" : 6203,
+                "rank" : 5
+            },
+            { 
+                "name" : "Panama",
+                "count" : 5102,
+                "rank" : 6
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 4000,
+                "rank" : 7
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 3919,
+                "rank" : 8
+            },
+            { 
+                "name" : "Malawi",
+                "count" : 3900,
+                "rank" : 9
+            },
+            { 
+                "name" : "Canada",
+                "count" : 3484,
+                "rank" : 10
+            },
+            { 
+                "name" : "Chile",
+                "count" : 3293,
+                "rank" : 11
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 2994,
+                "rank" : 12
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 2974,
+                "rank" : 13
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 2456,
+                "rank" : 14
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 1891,
+                "rank" : 15
+            },
+            { 
+                "name" : "Brazil",
+                "count" : 1408,
+                "rank" : 16
+            },
+            { 
+                "name" : "Peru",
+                "count" : 1205,
+                "rank" : 17
+            },
+            { 
+                "name" : "India",
+                "count" : 1176,
+                "rank" : 18
+            },
+            { 
+                "name" : "China",
+                "count" : 1126,
+                "rank" : 19
+            },
+            { 
+                "name" : "Trinidad and Tobago",
+                "count" : 667,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Sheet",
+        "maxCount" : 3276,
+        "medianCount" : 27,
+        "products" : [
+            "Construction Material"
+        ],
+        "countries" : [
+            { 
+                "name" : "Switzerland",
+                "count" : 3276,
+                "rank" : 1
+            },
+            { 
+                "name" : "Italy",
+                "count" : 2231,
+                "rank" : 2
+            },
+            { 
+                "name" : "Romania",
+                "count" : 299,
+                "rank" : 3
+            },
+            { 
+                "name" : "Denmark",
+                "count" : 276,
+                "rank" : 4
+            },
+            { 
+                "name" : "Greece",
+                "count" : 268,
+                "rank" : 5
+            },
+            { 
+                "name" : "Ireland",
+                "count" : 111,
+                "rank" : 6
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 110,
+                "rank" : 7
+            },
+            { 
+                "name" : "Slovenia",
+                "count" : 61,
+                "rank" : 8
+            },
+            { 
+                "name" : "Bulgaria",
+                "count" : 48,
+                "rank" : 9
+            },
+            { 
+                "name" : "France",
+                "count" : 34,
+                "rank" : 10
+            },
+            { 
+                "name" : "Spain",
+                "count" : 20,
+                "rank" : 11
+            },
+            { 
+                "name" : "Russia",
+                "count" : 15,
+                "rank" : 12
+            },
+            { 
+                "name" : "Germany",
+                "count" : 10,
+                "rank" : 13
+            },
+            { 
+                "name" : "Portugal",
+                "count" : 5,
+                "rank" : 14
+            },
+            { 
+                "name" : "Ukraine",
+                "count" : 3,
+                "rank" : 15
+            },
+            { 
+                "name" : "Estonia",
+                "count" : 1,
+                "rank" : 16
+            },
+            { 
+                "name" : "Georgia",
+                "count" : 1,
+                "rank" : 16
+            }
+
+        ]
+    },
+    { 
+        "plasticType" : "Plastic Straps",
+        "maxCount" : 57776,
+        "medianCount" : 3984,
+        "products" : [
+            "Construction Material"
+        ],
+        "countries" : [
+            { 
+                "name" : "United States",
+                "count" : 57776,
+                "rank" : 1
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 23957,
+                "rank" : 2
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 7994,
+                "rank" : 3
+            },
+            { 
+                "name" : "India",
+                "count" : 6389,
+                "rank" : 4
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 6057,
+                "rank" : 5
+            },
+            { 
+                "name" : "South Korea",
+                "count" : 5667,
+                "rank" : 6
+            },
+            { 
+                "name" : "Thailand",
+                "count" : 5267,
+                "rank" : 7
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 4899,
+                "rank" : 8
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 4798,
+                "rank" : 9
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 4645,
+                "rank" : 10
+            },
+            { 
+                "name" : "Canada",
+                "count" : 3322,
+                "rank" : 11
+            },
+            { 
+                "name" : "China",
+                "count" : 3284,
+                "rank" : 12
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 3249,
+                "rank" : 13
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 3213,
+                "rank" : 14
+            },
+            { 
+                "name" : "Peru",
+                "count" : 2931,
+                "rank" : 15
+            },
+            { 
+                "name" : "Singapore",
+                "count" : 2763,
+                "rank" : 16
+            },
+            { 
+                "name" : "Italy",
+                "count" : 2195,
+                "rank" : 17
+            },
+            { 
+                "name" : "Norway",
+                "count" : 2183,
+                "rank" : 18
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 1937,
+                "rank" : 19
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 1929,
+                "rank" : 20
+            }
+        ]
+    },
+    { 
+        "plasticType" : "Wrappers or Labels",
+        "maxCount" : 2999555,
+        "medianCount" : 51584,
+        "products" : [
+            "Asphalt Additive",
+            "Bollards",
+            "Construction Material",
+            "Decking",
+            "Fencing",
+            "Furniture",
+            "Houses",
+            "Mounting Blocks"
+        ],
+        "countries" : [
+            { 
+                "name" : "Philippines",
+                "count" : 2999555,
+                "rank" : 1
+            },
+            { 
+                "name" : "United States",
+                "count" : 1122403,
+                "rank" : 2
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 1009304,
+                "rank" : 3
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 166812,
+                "rank" : 4
+            },
+            { 
+                "name" : "Canada",
+                "count" : 121302,
+                "rank" : 5
+            },
+            { 
+                "name" : "Jamaica",
+                "count" : 70444,
+                "rank" : 6
+            },
+            { 
+                "name" : "India",
+                "count" : 62418,
+                "rank" : 7
+            },
+            { 
+                "name" : "United Kingdom",
+                "count" : 61406,
+                "rank" : 8
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 55830,
+                "rank" : 9
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 51912,
+                "rank" : 10
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 51256,
+                "rank" : 11
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 48263,
+                "rank" : 12
+            },
+            { 
+                "name" : "China",
+                "count" : 47178,
+                "rank" : 13
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 46286,
+                "rank" : 14
+            },
+            { 
+                "name" : "Chile",
+                "count" : 45245,
+                "rank" : 15
+            },
+            { 
+                "name" : "South Africa",
+                "count" : 43799,
+                "rank" : 16
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 36550,
+                "rank" : 17
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 36459,
+                "rank" : 18
+            },
+            { 
+                "name" : "Indonesia",
+                "count" : 30698,
+                "rank" : 19
+            },
+            { 
+                "name" : "Tanzania",
+                "count" : 27606,
+                "rank" : 20
+            }
+        ]
+    }
+]
