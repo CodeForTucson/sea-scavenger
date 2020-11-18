@@ -5,6 +5,12 @@
     background-color: lightgray;
     padding-left: 1em;
     padding-right: 1em;
+    font-family: sans-serif;
     z-index: 100;
     display: none;
+}
+
+p#playagainscreen {
+    font-size: 3em;
+    text-align: center;
 }
