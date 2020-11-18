@@ -5,29 +5,26 @@
     background-color: lightgray;
     padding-left: 1em;
     padding-right: 1em;
+    font-family: sans-serif;
     z-index: 100;
 }
 
 #splashscreen h1 {
     font-size: 3em;
-    font-family: sans-serif;
     text-align: center;
 }
 
 #splashscreen h3 {
     font-size: 2em;
-    font-family: sans-serif;
     text-align: center;
 }
 
 #splashscreen p {
     font-size: 1.2em;
-    font-family: sans-serif;
     text-align: center;
 }
 
 #splashscreen li {
     font-size: 1.2em;
-    font-family: sans-serif;
     color: mediumblue;
 }

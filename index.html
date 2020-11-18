@@ -22,7 +22,7 @@
             <header>
                 <img src="images/sea-scavenger-logo.png">
             </header>
-            <section id="splashscreen">
+            <article id="splashscreen">
                 <h1>Welcome to Sea Scavenger!</h1>
                 <p>In this game, you are part of the circular economy.</p>
                 <p>What is a circular economy? We're glad you asked!</p>
@@ -45,95 +45,140 @@
                         the game is over.</li>
                 </ul>
                 <h3>Good luck!</h3>
-            </section>
-            <section id="missionscreen">
-                <p>
-                    <img id="plastic-image" src="images/default-plastic.png" alt="Image of plastic waste.">
-                    <span id="screen-title">MISSION</span>
-                    <span id="mission-num-pieces">000,000</span><br />
-                    <span id="mission-plastic-type">PLASTIC</span>
-                </p>
-                <p>
-                    <span id="to-make-text">TO MAKE</span>
-                    <span id="plastic-product">SUNGLASSES</span>
-                    <img id="product-image" src="images/default-product.png" alt="Image of plastic product.">
-                </p>
-                <p>
-                    <button id="mission-yes-button">YES</button>ACCEPT?<button id="mission-no-button">NO</button>
-                </p>
-            </section>
-            <section id="countryscreen">
-                <p>
-                    <span id="country-num-pieces">000,000</span>
-                    <span id="country-plastic-type">PLASTIC</span>
-                    <span id="chooser-text">Choose a country</span>
-                    <button id="country-button-1">Country 1</button>
-                    <button id="country-button-2">Country 2</button>
-                    <button id="country-button-3">Country 3</button>
-                    <button id="country-button-4">Country 4</button>
-                    <button id="country-button-5">Country 5</button>
-                    <button id="country-button-6">Country 6</button>
-                </p>
-            </section>
-            <section id="missionexecutionscreen">
-                <p>
-                    <span id="execution-num-pieces">000,000</span>
-                    <span id="execution-plastic-type">PLASTIC</span>
-                </p>
-                <p id="execution-piece-count">000,000</p>
-                <p>
-                    <span id="other-plastic-type1">OTHER PLASTIC 1</span>
-                    <span id="other-plastic-type2">OTHER PLASTIC 2</span>
-                    <span id="other-plastic-type3">OTHER PLASTIC 3</span>
-                    <span id="other-plastic-type4">OTHER PLASTIC 4</span>
-                    <span id="other-plastic-type5">OTHER PLASTIC 5</span>
-                    <span id="other-plastic-type6">OTHER PLASTIC 6</span>
-                </p>
-                <p>
-                    <span id="other-plastic-count1">000</span>
-                    <span id="other-plastic-count2">000</span>
-                    <span id="other-plastic-count3">000</span>
-                    <span id="other-plastic-count4">000</span>
-                    <span id="other-plastic-count5">000</span>
-                    <span id="other-plastic-count6">000</span>
-                </p>
-            </section>
-            <section id="confirmationscreen">
-                <h1>Not Accepting the Mission</h1>
-                <h1>Will End the Game</h1>
-                <span><button id="confirm-yes-button">Yes</button>Are You Sure?<button id="confirm-no-button">No</button></span>
-            </section>
-            <section id="statisticsscreen">
-                <h1>Sorry</h1>
-                <h1>You did not complete your mission!</h1>
-                <p>
-                    <span id="summary-plastic-type1">PLASTIC 1</span>
-                    <span id="summary-plastic-type2">PLASTIC 2</span>
-                    <span id="summary-plastic-type3">PLASTIC 3</span>
-                    <span id="summary-plastic-type4">PLASTIC 4</span>
-                    <span id="summary-plastic-type5">PLASTIC 5</span>
-                    <span id="summary-plastic-type6">PLASTIC 6</span>
-                    <span id="summary-plastic-type7">PLASTIC 7</span>
-                </p>
-                <p>
-                    <span id="summary-plastic-count1">000,000</span>
-                    <span id="summary-plastic-count2">000,000</span>
-                    <span id="summary-plastic-count3">000,000</span>
-                    <span id="summary-plastic-count4">000,000</span>
-                    <span id="summary-plastic-count5">000,000</span>
-                    <span id="summary-plastic-count6">000,000</span>
-                    <span id="summary-plastic-count7">000,000</span>
-                </p>
-            </section>
-            <section id="playagainscreen">
-                <h1>Would You Like To</h1>
-                <h1>Play Again?</h1>
-                <span><button id="play-again-yes-button">Yes</button><button id="play-again-no-button">No</button></span>
-            </section>
-            <section id="creditscreen">
+            </article>
+            <article id="missionscreen">
+                <div class="mission-grid">
+                    <header id="mission-header">
+                        <h1>MISSION</h1>
+                    </header>
+                    <section id="mission-plastics">
+                        <!-- TODO: Build plastic image library.
+                        <img id="plastic-image" src="images/default-plastic.png" alt="Image of plastic waste.">-->
+                        <div id="mission-num-pieces">000,000</div>
+                        <div id="mission-plastic-type">PLASTIC</div>
+                    </section>
+                    <section id="mission-products">
+                        <div id="to-make-text">TO MAKE</div>
+                        <div id="plastic-product">SUNGLASSES</div>
+                        <!-- TODO: Build product image library.
+                        <img id="product-image" src="images/default-product.png" alt="Image of plastic product.">-->
+                    </section>
+                    <section id="mission-select">                   
+                        <button id="mission-yes-button">YES</button>
+                        <span>ACCEPT?</span>
+                        <button id="mission-no-button">NO</button>
+                    </section>    
+                </div>
+            </article>
+            <article id="countryscreen">
+                <div class="country-grid">
+                    <section id="country-mission-requirement">
+                        <div id="country-num-pieces">000,000</div>
+                        <div id="country-plastic-type">PLASTIC</div>
+                        <p>Choose a country</p>
+                    </section>
+                    <section id="country-choices-1-3">
+                        <div id="country-block-1">
+                            <button id="country-button-1">Country 1</button>
+                        </div>
+                        <div id="country-block-2">
+                            <button id="country-button-2">Country 2</button>
+                        </div>
+                        <div id="country-block-3">
+                            <button id="country-button-3">Country 3</button>
+                        </div>
+                    </section>
+                    <section id="country-choices-4-6">
+                        <div id="country-block-4">
+                            <button id="country-button-4">Country 4</button>
+                        </div>
+                        <div id="country-block-5">
+                            <button id="country-button-5">Country 5</button>
+                        </div>
+                        <div id="country-block-6">
+                            <button id="country-button-6">Country 6</button>
+                        </div>
+                    </section>    
+                </div>
+            </article>
+            <article id="missionexecutionscreen">
+                <div class="execution-grid">
+                    <section id="execution-mission-requirement">
+                        <div id="execution-num-pieces">000,000</div>
+                        <div id="execution-plastic-type">PLASTIC</div>
+                    </section>
+                    <div id="execution-piece-count">000,000</div>
+                    <section id="execution-other-plastics">
+                        <div id="other-plastic-type1">OTHER PLASTIC 1</div>
+                        <div id="other-plastic-type2">OTHER PLASTIC 2</div>
+                        <div id="other-plastic-type3">OTHER PLASTIC 3</div>
+                        <div id="other-plastic-type4">OTHER PLASTIC 4</div>
+                        <div id="other-plastic-type5">OTHER PLASTIC 5</div>
+                        <div id="other-plastic-type6">OTHER PLASTIC 6</div>
+                        <div id="other-plastic-type7">OTHER PLASTIC 7</div>
+                        <div id="other-plastic-type8">OTHER PLASTIC 8</div>
+                        <div id="other-plastic-type9">OTHER PLASTIC 9</div>
+                        <div id="other-plastic-type10">OTHER PLASTIC 10</div>
+                    </section>
+                    <section id="execution-other-plastics-counts">
+                        <div id="other-plastic-count1">000</div>
+                        <div id="other-plastic-count2">000</div>
+                        <div id="other-plastic-count3">000</div>
+                        <div id="other-plastic-count4">000</div>
+                        <div id="other-plastic-count5">000</div>
+                        <div id="other-plastic-count6">000</div>
+                        <div id="other-plastic-count7">000</div>
+                        <div id="other-plastic-count8">000</div>
+                        <div id="other-plastic-count9">000</div>
+                        <div id="other-plastic-count10">000</div>
+                    </section>    
+                </div>
+            </article>
+            <article id="confirmationscreen">
+                <p>Not Accepting the Mission</p>
+                <p>Will End the Game</p>
+                <button id="confirm-yes-button">Yes</button><span>Are You Sure?</span><button id="confirm-no-button">No</button>
+            </article>
+            <article id="statisticsscreen">
+                <div class="statistics-grid">
+                    <section id="not-complete-message">
+                        <p>Sorry</p>
+                        <p>You did not complete your mission!</p>    
+                    </section>
+                    <section id="summary-plastics">
+                        <div id="summary-plastic-type1">PLASTIC 1</div>
+                        <div id="summary-plastic-type2">PLASTIC 2</div>
+                        <div id="summary-plastic-type3">PLASTIC 3</div>
+                        <div id="summary-plastic-type4">PLASTIC 4</div>
+                        <div id="summary-plastic-type5">PLASTIC 5</div>
+                        <div id="summary-plastic-type6">PLASTIC 6</div>
+                        <div id="summary-plastic-type7">PLASTIC 7</div>
+                        <div id="summary-plastic-type8">PLASTIC 8</div>
+                        <div id="summary-plastic-type9">PLASTIC 9</div>
+                        <div id="summary-plastic-type10">PLASTIC 10</div>
+                    </section>
+                    <section id="summary-plastics-counts">
+                        <div id="summary-plastic-count1">000,000</div>
+                        <div id="summary-plastic-count2">000,000</div>
+                        <div id="summary-plastic-count3">000,000</div>
+                        <div id="summary-plastic-count4">000,000</div>
+                        <div id="summary-plastic-count5">000,000</div>
+                        <div id="summary-plastic-count6">000,000</div>
+                        <div id="summary-plastic-count7">000,000</div>
+                        <div id="summary-plastic-count8">000,000</div>
+                        <div id="summary-plastic-count9">000,000</div>
+                        <div id="summary-plastic-count10">000,000</div>
+                    </section>    
+                </div>
+            </article>
+            <article id="playagainscreen">
+                <p>Would You Like To<br />Play Again?</p>
+                <button id="play-again-yes-button">Yes</button><button id="play-again-no-button">No</button>
+            </article>
+            <article id="creditscreen">
                 <h1>Sea Scavenger</h1>
                 <h2>A project of Code for Tucson</h2>
-            </section>
+            </article>
             <div class="worldmap"></div>
            <footer>
                 <img src="images/CodeForTucsonHeader.png">

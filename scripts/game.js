@@ -89,7 +89,7 @@ let missionScreen = document.getElementById("missionscreen");
 // Display a mission to the player. The player can choose
 // whether or not to accept the mission via the mission button event listeners. 
 function displayMissionScreen() {
-    missionScreen.style.display = "block";
+    missionScreen.style.display = "grid";
 }
 
 // hideMissionScreen
@@ -111,7 +111,7 @@ let countryScreen = document.getElementById("countryscreen");
 // Display the country selection screen. The player selects a country via the
 // country button event listeners.
 function displayCountryScreen() {
-    countryScreen.style.display = "block";
+    countryScreen.style.display = "grid";
 }
 
 // hideCountryScreen
@@ -136,7 +136,7 @@ let executionScreen = document.getElementById("missionexecutionscreen");
 // selected by the player.
 async function executeMission(missionString) {
     console.log(missionString);
-    executionScreen.style.display = "block";
+    executionScreen.style.display = "grid";
     await sleep(5000);
     executionScreen.style.display = "none";
     displayStatisticsScreen();
@@ -149,7 +149,7 @@ let confirmationScreen = document.getElementById("confirmationscreen");
 // mission. The player can confirm or not confirm the decision using the
 // confirmation button event listeners.
 function displayConfirmationScreen() {
-    confirmationScreen.style.display = "block";
+    confirmationScreen.style.display = "grid";
 }
 
 // hideConfirmationScreen
@@ -163,7 +163,7 @@ let statisticsScreen = document.getElementById("statisticsscreen");
 // displayStatisticsScreen
 // Display the game statistics to the player at the end of the game.
 async function displayStatisticsScreen() {
-    statisticsScreen.style.display = "block";
+    statisticsScreen.style.display = "grid";
     await sleep(5000);
     statisticsScreen.style.display = "none";
     displayPlayAgainScreen();
@@ -175,7 +175,7 @@ let playAgainScreen = document.getElementById("playagainscreen");
 // Display a prompt to the player to play the game again or not.
 // The player makes a choice using the 'yes' or 'no' button event listeners.
 function displayPlayAgainScreen() {
-    playAgainScreen.style.display = "block";
+    playAgainScreen.style.display = "grid";
 }
 
 // hidePlayAgainScreen
@@ -198,7 +198,7 @@ let creditScreen = document.getElementById("creditscreen");
 // displayCreditScreen
 // Displays the credit screen.
 function displayCreditScreen() {
-    creditScreen.style.display = "block";
+    creditScreen.style.display = "grid";
 }
 
 
