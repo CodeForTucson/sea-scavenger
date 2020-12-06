@@ -102,7 +102,8 @@ function hideMissionScreen() {
 // Highlight the six countries in the mission and display the highlighted map
 // for ten seconds.
 function highlightGameboard() {
-    window.setTimeout(displayCountryScreen, 10000);
+//    window.setTimeout(displayCountryScreen, 10000);
+    window.setTimeout(displayCountryScreen, 500);
 }
 
 let countryScreen = document.getElementById("countryscreen");
@@ -207,7 +208,8 @@ function displayCreditScreen() {
 // Event listener that executes when the page has loaded to start the game.
 // This event listener displays the splash screen for the set timeout period.
 window.addEventListener("load" , event => {
-    window.setTimeout(hideSplash, 30000);
+//    window.setTimeout(hideSplash, 30000);
+    window.setTimeout(hideSplash, 500);
 });
 
 // Event listener for the accept mission yes button. 

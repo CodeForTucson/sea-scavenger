@@ -47,7 +47,7 @@
                 <h3>Good luck!</h3>
             </article>
             <article id="missionscreen">
-                <div class="mission-grid">
+                <div id="mission-grid">
                     <header id="mission-header">
                         <h1>MISSION</h1>
                     </header>
@@ -63,15 +63,13 @@
                         <!-- TODO: Build product image library.
                         <img id="product-image" src="images/default-product.png" alt="Image of plastic product.">-->
                     </section>
-                    <section id="mission-select">                   
-                        <button id="mission-yes-button">YES</button>
-                        <span>ACCEPT?</span>
-                        <button id="mission-no-button">NO</button>
-                    </section>    
+                    <button id="mission-yes-button">YES</button>
+                    <div id="accept-text">ACCEPT?</div>
+                    <button id="mission-no-button">NO</button>
                 </div>
             </article>
             <article id="countryscreen">
-                <div class="country-grid">
+                <div id="country-grid">
                     <section id="country-mission-requirement">
                         <div id="country-num-pieces">000,000</div>
                         <div id="country-plastic-type">PLASTIC</div>
@@ -102,7 +100,7 @@
                 </div>
             </article>
             <article id="missionexecutionscreen">
-                <div class="execution-grid">
+                <div id="execution-grid">
                     <section id="execution-mission-requirement">
                         <div id="execution-num-pieces">000,000</div>
                         <div id="execution-plastic-type">PLASTIC</div>
@@ -135,12 +133,17 @@
                 </div>
             </article>
             <article id="confirmationscreen">
-                <p>Not Accepting the Mission</p>
-                <p>Will End the Game</p>
-                <button id="confirm-yes-button">Yes</button><span>Are You Sure?</span><button id="confirm-no-button">No</button>
+                <div id="confirmation-grid">
+                    <section id="confirmation-message">
+                        <p>Not Accepting the Mission<br />Will End the Game</p>        
+                    </section>
+                    <button id="confirm-yes-button">Yes</button>
+                    <div id="confirm-text">Are You Sure?</div>
+                    <button id="confirm-no-button">No</button>
+                </div>
             </article>
             <article id="statisticsscreen">
-                <div class="statistics-grid">
+                <div id="statistics-grid">
                     <section id="not-complete-message">
                         <p>Sorry</p>
                         <p>You did not complete your mission!</p>    
@@ -172,12 +175,20 @@
                 </div>
             </article>
             <article id="playagainscreen">
-                <p>Would You Like To<br />Play Again?</p>
-                <button id="play-again-yes-button">Yes</button><button id="play-again-no-button">No</button>
+                <div id="play-again-grid">
+                    <section id="play-again-message">
+                        <p>Would You Like To<br />Play Again?</p>
+                    </section>
+                    <button id="play-again-yes-button">Yes</button>
+                    <button id="play-again-no-button">No</button>
+                </div>
             </article>
             <article id="creditscreen">
-                <h1>Sea Scavenger</h1>
-                <h2>A project of Code for Tucson</h2>
+                <div id="credit-grid">
+                    <img id="sea-scavenger-credit-logo" src="images/sea-scavenger-logo.png" alt="Sea Scavenger logo.">
+                    <div id="project-text">A project of</div>
+                    <img id="code-for-tucson-credit-logo" src="images/code-for-tucson-logo.png" alt="Code for Tucson logo.">    
+                </div>
             </article>
             <div class="worldmap" id="worldmap"></div>
             <footer>
