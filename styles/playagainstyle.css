@@ -1,6 +1,6 @@
 #playagainscreen {
-    grid-column: 3 / 6;
-    grid-row: 4 / 7;
+    grid-column: 3 / 9;
+    grid-row: 4 / 8;
     border-color: black;
     background-color: lightgray;
     padding-left: 1em;
