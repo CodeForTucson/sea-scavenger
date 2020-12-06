@@ -1,81 +1,87 @@
 #missionscreen {
-    grid-column: 2 / 10;
+    grid-column: 3 / 9;
     grid-row: 3 / 9;
     border-color: black;
     background-color: lightgray;
-    padding-left: 1em;
-    padding-right: 1em;
     font-family: sans-serif;
     z-index: 100;
     display: none;
 }
 
-.mission-grid {
+#mission-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(6, 10vw);
+    grid-template-rows: repeat(6, 10vh);
 }
 
 #mission-header {
-    grid-row: 1 / 2;
-    grid-column: 1 / 5;
-    font-size: 2em;
-    text-align: center;
-    padding: 0 0;
-    max-height: 100%;
+    grid-row: 1;
+    grid-column: 1 / 7;
     align-self: center;
     justify-self: stretch;
+    max-height: 100%;
+    text-align: center;
+    font-size: x-large;
 }
 
 #mission-plastics {
-    grid-row: 2 / 3;
-    grid-column: 3 / 5;
-    font-size: 2em;
+    grid-row: 2 / 4;
+    grid-column: 4 / 7;
+    font-size: 2rem;
     text-align: center;
     align-self: center;
     justify-self: center;
 }
 
 #plastic-image {
-    grid-row: 2 / 3;
-    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    grid-column: 1 / 4;
     max-height: 100%;
+    align-self: center;
+    justify-self: center;
 }
 
 #mission-products {
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
-    font-size: 2em;
+    grid-row: 4 / 6;
+    grid-column: 1 / 4;
+    font-size: 2rem;
     text-align: center;
     align-self: center;
     justify-self: center;
 }
 
 #to-make-text {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #product-image {
-    grid-column: 3 / 5;
+    grid-row: 4 / 6;
+    grid-column: 4 / 7;
     max-height: 100%;
 }
 
-#mission-select {
-    grid-row: 5 / 6;
-    grid-column: 2 / 4;
-    font-size: 2em;
-    text-align: center;
+#mission-yes-button {
+    grid-row: 6;
+    grid-column: 2;
     align-self: center;
     justify-self: center;
+    font-size: 1.75rem;
+    padding: 15px 40px;
 }
 
-#mission-yes-button {
-    line-height: 3;
-    padding: 0 30px;
+#accept-text {
+    grid-row: 6;
+    grid-column: 3 / 5;
+    align-self: center;
+    justify-self: center;
+    font-size: 2rem;
 }
 
 #mission-no-button {
-    line-height: 3;
-    padding: 0 30px;
+    grid-row: 6;
+    grid-column: 5;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.75rem;
+    padding: 15px 40px;
 }
-
