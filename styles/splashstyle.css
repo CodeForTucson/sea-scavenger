@@ -1,6 +1,6 @@
 #splashscreen {
-    grid-column: 2 / 7;
-    grid-row: 3 / 8;
+    grid-column: 2 / 10;
+    grid-row: 3 / 9;
     border-color: black;
     background-color: lightgray;
     padding-left: 1em;
@@ -12,6 +12,7 @@
 #splashscreen h1 {
     font-size: 3em;
     text-align: center;
+    align-self: stretch;
 }
 
 #splashscreen h3 {

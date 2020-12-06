@@ -1,24 +1,38 @@
-var height = 540;
-var width = 950;
+async function drawMap() {   
 
-var projection = d3.geoMercator()
-    .center([0, 20])
-    .scale(120)
-    .rotate([-10, 0]);
+    // Get dimensions of map container in current viewport.
+    let mapContainer = document.getElementById("worldmap");
+    let dimensions = {
+        height: mapContainer.offsetHeight,
+        width: mapContainer.offsetWidth
+    };
+    
+    // Retrieve GeoJSON for countries.
+    const countryShapes = await d3.json("data/world-geojson.json");
 
-var svg = d3.select(".worldmap").append("svg")
-    .attr("preserveAspectRatio", "xMidYMid")
-    .attr("viewBox", "0 0 " + width + " " + height);
+    // Calculate Equirectangular projection for country data.
+    const projection = d3.geoEquirectangular()
+        .fitSize([dimensions.width, dimensions.height], countryShapes)
+        .translate([dimensions.width / 2, dimensions.height / 2]);
 
-var path = d3.geoPath()
-    .projection(projection);
+    // Generate SVG path for projection.
+    const pathGenerator = d3.geoPath(projection);
 
-var g = svg.append("g");
+    // Create map container.
+    const wrapper = d3.select("#worldmap")
+        .append("svg")
+        .attr("width", dimensions.width)
+        .attr("height", dimensions.height);
+//        .style("stroke", "gray")
+//        .style("fill", "lightgray");
 
-d3.json("maps/countries-110m.json").then(function(topology) {
-    g.selectAll("path")
-        .data(topojson.feature(topology, topology.objects.countries).features)
-            .enter()
-            .append("path")
-            .attr("d", path);
-});
+    // Render map.
+    const countries = wrapper.selectAll(".country")
+        .data(countryShapes.features)
+        .enter()
+        .append("path")
+        .attr("d", pathGenerator);
+
+}
+
+drawMap();

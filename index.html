@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Sea Scavenger</title>
+        <link rel="icon" type="image/png" href="images/sea-scavenger-icon.png">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/splashstyle.css">
         <link rel="stylesheet" href="styles/missionstyle.css">
@@ -15,12 +16,11 @@
         <link rel="stylesheet" href="styles/playagainstyle.css">
         <link rel="stylesheet" href="styles/creditstyle.css">
         <script src="https://d3js.org/d3.v6.min.js"></script>
-        <script src="https://unpkg.com/topojson@3"></script>
     </head>
     <body>
         <div class="container">
             <header>
-                <img src="images/sea-scavenger-logo.png">
+                <img src="images/sea-scavenger-logo.png" alt="Sea Scavenger logo.">
             </header>
             <article id="splashscreen">
                 <h1>Welcome to Sea Scavenger!</h1>
@@ -179,10 +179,12 @@
                 <h1>Sea Scavenger</h1>
                 <h2>A project of Code for Tucson</h2>
             </article>
-            <div class="worldmap"></div>
-           <footer>
-                <img src="images/CodeForTucsonHeader.png">
-            </footer>    
+            <div class="worldmap" id="worldmap"></div>
+            <footer>
+                <div id="footer-grid">
+                    <img id="cft-logo" src="images/code-for-tucson-logo.png" alt="Code for Tucson logo.">
+                </div>
+            </footer>
         </div>
         <script src="scripts/displaymap.js"></script>
         <script src="scripts/game.js"></script>
