@@ -18,7 +18,7 @@ let plasticsCollected = {
     FishingLineLureRope: 0,
     FishingNet: 0,
     LollipopStickOrEarBud: 0,
-    Plastic_Beverage_Bottle: 0,
+    PlasticBeverageBottles: 0,
     Plastic_FoamFoodContainer: 0,
     PlasticBag: 0,
     PlasticBottleCapOrLid: 0,
@@ -70,16 +70,16 @@ function hideSplash() {
 function generateMission () {
     console.log("Generating mission.");
     // TODO: Logic for populating the mission object.
-    mission.plasticType = "PLASTIC";
-    mission.numPieces = 999999;
-    mission.product = "SUNGLASSES",
+    mission.plasticType = "Plastic Beverage Bottles";
+    mission.numPieces = 117962;
+    mission.product = "Toothbrushes",
     mission.countries = {
-        country1: "US",
-        country2: "Canada",
-        country3: "Mexico",
-        country4: "China",
-        country5: "Japan",
-        country6: "Thailand"
+        country1: "Canada",
+        country2: "Jamaica",
+        country3: "Venezuela",
+        country4: "United States",
+        country5: "India",
+        country6: "China"
     };
 }
 
@@ -90,6 +90,9 @@ let missionScreen = document.getElementById("missionscreen");
 // whether or not to accept the mission via the mission button event listeners. 
 function displayMissionScreen() {
     missionScreen.style.display = "grid";
+    document.getElementById("mission-num-pieces").textContent = mission.numPieces;
+    document.getElementById("mission-plastic-type").textContent = mission.plasticType;
+    document.getElementById("plastic-product").textContent = mission.product;
 }
 
 // hideMissionScreen
@@ -113,6 +116,15 @@ let countryScreen = document.getElementById("countryscreen");
 // country button event listeners.
 function displayCountryScreen() {
     countryScreen.style.display = "grid";
+    document.getElementById("country-num-pieces").textContent = mission.numPieces;
+    document.getElementById("country-plastic-type").textContent = mission.plasticType;
+    document.getElementById("country-button-1").textContent = mission.countries.country1;
+    document.getElementById("country-button-2").textContent = mission.countries.country2;
+    document.getElementById("country-button-3").textContent = mission.countries.country3;
+    document.getElementById("country-button-4").textContent = mission.countries.country4;
+    document.getElementById("country-button-5").textContent = mission.countries.country5;
+    document.getElementById("country-button-6").textContent = mission.countries.country6;
+
 }
 
 // hideCountryScreen
@@ -138,6 +150,8 @@ let executionScreen = document.getElementById("missionexecutionscreen");
 async function executeMission(missionString) {
     console.log(missionString);
     executionScreen.style.display = "grid";
+    document.getElementById("execution-num-pieces").textContent = mission.numPieces;
+    document.getElementById("execution-plastic-type").textContent = mission.plasticType;
     await sleep(5000);
     executionScreen.style.display = "none";
     displayStatisticsScreen();
