@@ -1,0 +1,132 @@
+[
+    { 
+        "plasticType" : "Plastic Beverage Bottles",
+        "maxCount" : 785408,
+        "medianCount" : 117962,
+        "products" : [
+            "Backpacks",
+            "Bras",
+            "Construction Material",
+            "Dog Beds",
+            "Dog Collars",
+            "Dog Leashes",
+            "Door Mats",
+            "Fanny Packs",
+            "Jackets",
+            "Laptop Cases",
+            "Leggings",
+            "Lunch Bags",
+            "Pens",
+            "Sailboats",
+            "Shoe Laces",
+            "Soccer Kit",
+            "Sweatpants",
+            "Toothbrushes",
+            "Tote Bags",
+            "Toys",
+            "Travel Bags"
+        ],
+        "countries" : [
+            { 
+                "name" : "Jamaica",
+                "count" : 785408,
+                "rank" : 1
+            },
+            { 
+                "name" : "United States",
+                "count" : 753841,
+                "rank" : 2
+            },
+            { 
+                "name" : "Philippines",
+                "count" : 627877,
+                "rank" : 3
+            },
+            { 
+                "name" : "Mexico",
+                "count" : 604268,
+                "rank" : 4
+            },
+            { 
+                "name" : "Ghana",
+                "count" : 249266,
+                "rank" : 5
+            },
+            { 
+                "name" : "Ecuador",
+                "count" : 187963,
+                "rank" : 6
+            },
+            { 
+                "name" : "Sri Lanka",
+                "count" : 179539,
+                "rank" : 7
+            },
+            { 
+                "name" : "China",
+                "count" : 164406,
+                "rank" : 8
+            },
+            { 
+                "name" : "Malaysia",
+                "count" : 150655,
+                "rank" : 9
+            },
+            { 
+                "name" : "Panama",
+                "count" : 132322,
+                "rank" : 10
+            },
+            { 
+                "name" : "Kenya",
+                "count" : 103602,
+                "rank" : 11
+            },
+            { 
+                "name" : "Trinidad and Tobago",
+                "count" : 93476,
+                "rank" : 12
+            },
+            { 
+                "name" : "Guatemala",
+                "count" : 86594,
+                "rank" : 13
+            },
+            { 
+                "name" : "Venezuela",
+                "count" : 86535,
+                "rank" : 14
+            },
+            { 
+                "name" : "Puerto Rico",
+                "count" : 86191,
+                "rank" : 15
+            },
+            { 
+                "name" : "India",
+                "count" : 76491,
+                "rank" : 16
+            },
+            { 
+                "name" : "Dominican Republic",
+                "count" : 66252,
+                "rank" : 17
+            },
+            { 
+                "name" : "Singapore",
+                "count" : 58307,
+                "rank" : 18
+            },
+            { 
+                "name" : "Canada",
+                "count" : 55666,
+                "rank" : 19
+            },
+            { 
+                "name" : "Costa Rica",
+                "count" : 39087,
+                "rank" : 20
+            }
+        ]
+    }
+]
