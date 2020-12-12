@@ -10,8 +10,8 @@
 
 #mission-grid {
     display: grid;
-    grid-template-columns: repeat(6, 10vw);
-    grid-template-rows: repeat(6, 10vh);
+    grid-template-columns: repeat(6, minmax(0, 10vw));
+    grid-template-rows: repeat(6, minmax(0, 10vh));
 }
 
 #mission-header {
@@ -35,8 +35,9 @@
 
 #plastic-image {
     grid-row: 2 / 4;
-    grid-column: 1 / 4;
-    max-height: 100%;
+    grid-column: 2;
+    max-height: 100px;
+    max-width: 100px;
     align-self: center;
     justify-self: center;
 }
@@ -56,8 +57,9 @@
 
 #product-image {
     grid-row: 4 / 6;
-    grid-column: 4 / 7;
-    max-height: 100%;
+    grid-column: 5;
+    max-height: 100px;
+    max-width: 100px;
 }
 
 #mission-yes-button {
