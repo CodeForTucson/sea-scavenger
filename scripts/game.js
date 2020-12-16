@@ -224,8 +224,8 @@ function displayCreditScreen() {
 // Event listener that executes when the page has loaded to start the game.
 // This event listener displays the splash screen for the set timeout period.
 window.addEventListener('load' , event => {
-//    window.setTimeout(hideSplash, 30000);
-    window.setTimeout(hideSplash, 500);
+    window.setTimeout(hideSplash, 30000);
+//    window.setTimeout(hideSplash, 500);
 });
 
 // Event listener for the accept mission yes button. 
