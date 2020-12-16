@@ -3,29 +3,48 @@
     grid-row: 3 / 9;
     border-color: black;
     background-color: lightgray;
-    padding-left: 1em;
-    padding-right: 1em;
     font-family: sans-serif;
     z-index: 100;
 }
 
-#splashscreen h1 {
-    font-size: 3em;
-    text-align: center;
-    align-self: stretch;
+#splash-grid {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(0, 10vw));
+    grid-template-rows: repeat(6, minmax(0, 10vh));
 }
 
-#splashscreen h3 {
+#splash-grid h1 {
+    grid-column: 2 / 8;
+    grid-row: 1;
     font-size: 2em;
     text-align: center;
+    align-self: center;
+    justify-self: center;
 }
 
-#splashscreen p {
-    font-size: 1.2em;
+#splash-text {
+    grid-column: 2 / 8;
+    grid-row: 2 / 4;
+    font-size: 1em;
     text-align: center;
+    align-self: center;
+    justify-self: center;
 }
 
-#splashscreen li {
-    font-size: 1.2em;
+#splash-grid ul {
+    grid-column: 2 / 8;
+    grid-row: 4 / 6;
+    font-size: 1em;
     color: mediumblue;
+    align-self: center;
+    justify-self: center;
+}
+
+#splash-grid h3 {
+    grid-column: 2 / 8;
+    grid-row: 6;
+    font-size: 1.5em;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
 }
