@@ -27,9 +27,10 @@
     grid-column: 2 / 6;
     grid-row: 3 / 5;
     text-align: center;
-    font-size: 3rem;
-    align-self: center;
+    font-size: 3vw;
+    align-self: end;
     justify-self: center;
+    padding-bottom: 1vh;
 }
 
 #code-for-tucson-credit-logo {

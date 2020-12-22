@@ -15,36 +15,39 @@
 }
 
 #confirmation-message {
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
     grid-column: 1 / 7;
     text-align: center;
     align-self: center;
     justify-self: center;
-    font-size: 2rem;
+    font-size: 3vw;
 }
 
 #confirm-yes-button {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 2;
-    align-self: center;
+    align-self: start;
     justify-self: center;
-    font-size: 1.75rem;
-    padding: 15px 40px;
+    font-size: 1.5vw;
+    height: 8vh;
+    width: 10vw;
 }
 
 #confirm-text {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 3 / 5;
-    align-self: center;
+    align-self: start;
     justify-self: center;
-    font-size: 2rem;
+    font-size: 2vw;
+    padding-top: 2vh;
 }
 
 #confirm-no-button {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 5;
-    align-self: center;
+    align-self: start;
     justify-self: center;
-    font-size: 1.75rem;
-    padding: 15px 40px;
+    font-size: 1.5vw;
+    height: 8vh;
+    width: 10vw;
 }

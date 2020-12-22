@@ -17,16 +17,17 @@
 #execution-mission-requirement {
     grid-column: 1 / 7;
     grid-row: 1;
-    font-size: 2rem;
+    font-size: 2vw;
     text-align: center;
     align-self: center;
     justify-self: center;
+    padding-top: 1.5vh;
 }
 
 #execution-piece-count {
     grid-column: 1 / 7;
     grid-row: 2;
-    font-size: 3rem;
+    font-size: 2vw;
     text-align: center;
     align-self: center;
     justify-self: center;
@@ -35,7 +36,7 @@
 #execution-other-plastics {
     grid-column: 1 / 4;
     grid-row: 3 / 7;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     text-align: left;
     align-self: center;
     justify-self: center;
@@ -44,7 +45,7 @@
 #execution-other-plastics-counts {
     grid-column: 4 / 7;
     grid-row: 3 / 7;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     text-align: left;
     align-self: center;
     justify-self: center;
