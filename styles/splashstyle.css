@@ -16,7 +16,7 @@
 #splash-grid h1 {
     grid-column: 2 / 8;
     grid-row: 1;
-    font-size: 2em;
+    font-size: 3vw;
     text-align: center;
     align-self: center;
     justify-self: center;
@@ -25,7 +25,7 @@
 #splash-text {
     grid-column: 2 / 8;
     grid-row: 2 / 4;
-    font-size: 1em;
+    font-size: 1.4vw;
     text-align: center;
     align-self: center;
     justify-self: center;
@@ -34,7 +34,7 @@
 #splash-grid ul {
     grid-column: 2 / 8;
     grid-row: 4 / 6;
-    font-size: 1em;
+    font-size: 1.4vw;
     color: mediumblue;
     align-self: center;
     justify-self: center;
@@ -43,7 +43,7 @@
 #splash-grid h3 {
     grid-column: 2 / 8;
     grid-row: 6;
-    font-size: 1.5em;
+    font-size: 2vw;
     text-align: center;
     align-self: center;
     justify-self: center;

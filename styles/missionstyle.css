@@ -21,13 +21,15 @@
     justify-self: stretch;
     max-height: 100%;
     text-align: center;
-    font-size: x-large;
+    font-size: 3vw;
+    font-weight: bold;
+    background-color: transparent;
 }
 
 #mission-plastics {
     grid-row: 2 / 4;
     grid-column: 4 / 7;
-    font-size: 2rem;
+    font-size: 2vw;
     text-align: center;
     align-self: center;
     justify-self: center;
@@ -36,8 +38,8 @@
 #plastic-image {
     grid-row: 2 / 4;
     grid-column: 2;
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 10vh;
+    max-width: 10vw;
     align-self: center;
     justify-self: center;
 }
@@ -45,45 +47,48 @@
 #mission-products {
     grid-row: 4 / 6;
     grid-column: 1 / 4;
-    font-size: 2rem;
+    font-size: 2vw;
     text-align: center;
     align-self: center;
     justify-self: center;
 }
 
 #to-make-text {
-    font-size: 1rem;
+    font-size: 1.5vw;
 }
 
 #product-image {
     grid-row: 4 / 6;
     grid-column: 5;
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 10vh;
+    max-width: 10vw;
 }
 
 #mission-yes-button {
     grid-row: 6;
     grid-column: 2;
-    align-self: center;
+    align-self: start;
     justify-self: center;
-    font-size: 1.75rem;
-    padding: 15px 40px;
+    font-size: 1.5vw;
+    height: 8vh;
+    width: 10vw;
 }
 
 #accept-text {
     grid-row: 6;
     grid-column: 3 / 5;
-    align-self: center;
+    align-self: start;
     justify-self: center;
-    font-size: 2rem;
+    font-size: 2vw;
+    padding-top: 2vh;
 }
 
 #mission-no-button {
     grid-row: 6;
     grid-column: 5;
-    align-self: center;
+    align-self: start;
     justify-self: center;
-    font-size: 1.75rem;
-    padding: 15px 40px;
+    font-size: 1.5vw;
+    height: 8vh;
+    width: 10vw;
 }

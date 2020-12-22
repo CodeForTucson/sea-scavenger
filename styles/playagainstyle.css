@@ -15,28 +15,30 @@
 }
 
 #play-again-message {
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
     grid-column: 1 / 7;
     text-align: center;
     align-self: center;
     justify-self: center;
-    font-size: 2rem;
+    font-size: 3vw;
 }
 
 #play-again-yes-button {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 2;
-    align-self: center;
+    align-self: start;
     justify-self: center;
-    font-size: 1.75rem;
-    padding: 15px 40px;
+    font-size: 1.5vw;
+    height: 8vh;
+    width: 10vw;
 }
 
 #play-again-no-button {
-    grid-row: 3;
+    grid-row: 4;
     grid-column: 5;
-    align-self: center;
+    align-self: start;
     justify-self: center;
-    font-size: 1.75rem;
-    padding: 15px 40px;
+    font-size: 1.5vw;
+    height: 8vh;
+    width: 10vw;
 }
