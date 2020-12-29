@@ -4,8 +4,7 @@
 // Code for Tucson
 // 20 September 2020
 
-// *** Game variables. ***
-let missionsCompleted = 0;
+/*** Game variables ***/
 
 // Plastics collected is an object to keep a talley of the plastic waste 
 // recovered in the missions. The properties are the field names from the 
@@ -48,14 +47,53 @@ let mission = {
         country4: '',
         country5: '',
         country6: ''
+    },
+    plasticsCount: {
+        country1: 0,
+        country2: 0,
+        country3: 0,
+        country4: 0,
+        country5: 0,
+        country6: 0
     }
 };
+
+// Helper function to read JSON files from data directory.
+async function getData(fileName) {
+    const response = await fetch(fileName);
+
+    return response.json();
+}
+
+// Object for plastics data derived from the Integrated Ocean Plastics dataset.
+let plasticsData;
+
+// Object for plastics data derived from Top 10 Ocean Plastics dataset.
+let top10plastics;
+
+
+/*** Game Logic ***/
+
+// initGame
+// Load data files and any other actions needed to initialize gameplay.
+async function initGame() {
+    plasticsData = await getData('data/plastics-test.json')
+    console.log(plasticsData);
+    console.log(plasticsData[0]);  
+}
 
 // hideSplash
 // Hides the splashscreen and displays the mission screen for the first mission.
 function hideSplash() {
     let splash = document.getElementById('splashscreen');
     splash.style.display = 'none';
+    newMission();
+}
+
+// newMission
+// Generate a new mission and display the mission screen. This is called when the
+// game first starts and when a mission has been successfully completed.
+function newMission() {
     generateMission();
     displayMissionScreen();
 }
@@ -70,17 +108,21 @@ function hideSplash() {
 function generateMission () {
     console.log('Generating mission.');
     // TODO: Logic for populating the mission object.
-    mission.plasticType = 'Plastic Beverage Bottles';
-    mission.numPieces = 117962;
-    mission.product = 'Toothbrushes',
-    mission.countries = {
-        country1: 'Canada',
-        country2: 'Jamaica',
-        country3: 'Venezuela',
-        country4: 'United States',
-        country5: 'India',
-        country6: 'China'
-    };
+    mission.plasticType = plasticsData[0].plasticType;
+    mission.numPieces = plasticsData[0].medianCount;
+    mission.product = plasticsData[0].products[17];
+    mission.countries.country1 = plasticsData[0].countries[0].name;
+    mission.plasticsCount.country1 = plasticsData[0].countries[0].count;
+    mission.countries.country2 = plasticsData[0].countries[1].name;
+    mission.plasticsCount.country2 = plasticsData[0].countries[1].count;
+    mission.countries.country3 = plasticsData[0].countries[2].name;
+    mission.plasticsCount.country3 = plasticsData[0].countries[2].count;
+    mission.countries.country4 = plasticsData[0].countries[10].name;
+    mission.plasticsCount.country4 = plasticsData[0].countries[10].count;
+    mission.countries.country5 = plasticsData[0].countries[11].name;
+    mission.plasticsCount.country5 = plasticsData[0].countries[11].count;
+    mission.countries.country6 = plasticsData[0].countries[19].name;
+    mission.plasticsCount.country6 = plasticsData[0].countries[19].count;
 }
 
 let missionScreen = document.getElementById('missionscreen');
@@ -93,8 +135,8 @@ function displayMissionScreen() {
     document.getElementById('mission-num-pieces').textContent = mission.numPieces;
     document.getElementById('mission-plastic-type').textContent = mission.plasticType;
     document.getElementById('plastic-product').textContent = mission.product;
-    document.getElementById('plastic-image').src='images/plastics/plastic-beverage-bottle.png';
-    document.getElementById('product-image').src='images/products/toothbrushes.png';
+    document.getElementById('plastic-image').src = 'images/plastics/plastic-beverage-bottle.png';
+    document.getElementById('product-image').src = 'images/products/toothbrushes.png';
 }
 
 // hideMissionScreen
@@ -125,8 +167,7 @@ function displayCountryScreen() {
     document.getElementById('country-button-3').textContent = mission.countries.country3;
     document.getElementById('country-button-4').textContent = mission.countries.country4;
     document.getElementById('country-button-5').textContent = mission.countries.country5;
-    document.getElementById('country-button-6').textContent = mission.countries.country6;
-
+    document.getElementById('country-button-6').textContent = mission.countries.country6
 }
 
 // hideCountryScreen
@@ -152,11 +193,21 @@ let executionScreen = document.getElementById('missionexecutionscreen');
 async function executeMission(missionString) {
     console.log(missionString);
     executionScreen.style.display = 'grid';
+    let retrievedCount = mission.plasticsCount[missionString];
     document.getElementById('execution-num-pieces').textContent = mission.numPieces;
     document.getElementById('execution-plastic-type').textContent = mission.plasticType;
+    document.getElementById('execution-piece-count').textContent = retrievedCount;
+    // TODO: Need a lookup table from mission.plasticType to keys in plasticsCollected.
+    plasticsCollected.PlasticBeverageBottles += retrievedCount;
+    // TODO: Populate plasticsCollected with other plastic types retrieved.
     await sleep(5000);
     executionScreen.style.display = 'none';
-    displayStatisticsScreen();
+    if (retrievedCount < mission.numPieces) {
+        displayStatisticsScreen();
+    } else {
+        newMission();
+    }
+    
 }
 
 let confirmationScreen = document.getElementById('confirmationscreen');
@@ -181,6 +232,10 @@ let statisticsScreen = document.getElementById('statisticsscreen');
 // Display the game statistics to the player at the end of the game.
 async function displayStatisticsScreen() {
     statisticsScreen.style.display = 'grid';
+    // TODO: Logic to display Top 10 recovered plastic types and counts. 
+    // TODO: Reverse lookup from plasticsCollected keys to plasticType names.
+    document.getElementById('summary-plastic-type1').textContent = mission.plasticType;
+    document.getElementById('summary-plastic-count1').textContent = plasticsCollected.PlasticBeverageBottles;
     await sleep(5000);
     statisticsScreen.style.display = 'none';
     displayPlayAgainScreen();
@@ -204,7 +259,7 @@ function hidePlayAgainScreen() {
 // clearGameStats
 // Clear all game variables to enable a new game to be played.
 function clearGameStats() {
-    missionsCompleted = 0;
+    // TODO: Fix function to clear plasticsCollected totals.
     for (plastic in plasticsCollected) {
         plastic = 0;
     }
@@ -219,13 +274,14 @@ function displayCreditScreen() {
 }
 
 
-// *** Event listeners to enable gameplay and control flow. ***
+/*** Event listeners to enable gameplay and control flow ***/
 
 // Event listener that executes when the page has loaded to start the game.
 // This event listener displays the splash screen for the set timeout period.
 window.addEventListener('load' , event => {
-    window.setTimeout(hideSplash, 30000);
-//    window.setTimeout(hideSplash, 500);
+    initGame();
+//    window.setTimeout(hideSplash, 30000);
+    window.setTimeout(hideSplash, 500);
 });
 
 // Event listener for the accept mission yes button. 
