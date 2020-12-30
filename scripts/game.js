@@ -260,8 +260,8 @@ function hidePlayAgainScreen() {
 // Clear all game variables to enable a new game to be played.
 function clearGameStats() {
     // TODO: Fix function to clear plasticsCollected totals.
-    for (plastic in plasticsCollected) {
-        plastic = 0;
+    for (const plastic in plasticsCollected) {
+        plasticsCollected[plastic] = 0;
     }
 }
 
