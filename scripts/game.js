@@ -10,25 +10,28 @@
 // recovered in the missions. The properties are the field names from the 
 // Combined Data Set contained in the CSV or JSON data file.
 let plasticsCollected = {
-    BucketOrCrate: 0,
-    BuoysAndFloats: 0,
+    Buckets: 0,
     CigaretteButts: 0,
-    FishingGlowSticks: 0,
-    FishingLineLureRope: 0,
-    FishingNet: 0,
-    LollipopStickOrEarBud: 0,
+    Crates: 0,
+    Earbuds: 0,
+    FishingLine: 0,
+    FishingNets: 0,
+    Floats: 0,
+    FoamFoodContainers: 0,
+    FoamPlatesOrCups: 0,
+    NylonRope: 0,
+    PlasticBags: 0,
     PlasticBeverageBottles: 0,
-    Plastic_FoamFoodContainer: 0,
-    PlasticBag: 0,
-    PlasticBottleCapOrLid: 0,
-    PlasticDrinkingStraw: 0,
-    PlasticLighter: 0,
-    PlasticOrFoamPlatesCupsSilverware: 0,
-    PlasticPersonalCareProduct: 0,
+    PlasticBottleCaps: 0,
+    PlasticDrinkingStraws: 0,
+    PlasticFoodContainers: 0,
+    PlasticLighters: 0,
+    PlasticPersonalCareProducts: 0,
+    PlasticPlatesOrCups: 0,
+    PlasticRings: 0,
     PlasticSheet: 0,
     PlasticStraps: 0,
-    StringRingRibbon: 0,
-    WrapperOrLabel: 0
+    WrappersOrLabels: 0
 };
 
 // Mission is an object that is populated by the generateMission function.
@@ -37,6 +40,7 @@ let plasticsCollected = {
 // plastic, and six randomly selected countries - some of which will satisfy
 // the mission requirements and some that won't.
 let mission = {
+    plasticsIndex: 0,
     plasticType: '',
     numPieces: 0,
     product: '',
@@ -71,6 +75,9 @@ let plasticsData;
 // Object for plastics data derived from Top 10 Ocean Plastics dataset.
 let top10plastics;
 
+// Object for display name lookup from plastics type key.
+let plasticsKeyToDisplayName;
+
 
 /*** Game Logic ***/
 
@@ -98,6 +105,14 @@ function newMission() {
     displayMissionScreen();
 }
 
+// getRandomInt
+// A helper function to return a random integer between 0 and a max value, non-inclusive.
+// For example, if max = 3, expect getRandomInt(3) to return 0, 1, or 2.
+// getRandomInt(1) will return 0.
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
+
 // generateMission
 // Generate a mission for the player to complete.
 // The mission will consist of a plastic type to be collected, the number of
@@ -108,21 +123,22 @@ function newMission() {
 function generateMission () {
     console.log('Generating mission.');
     // TODO: Logic for populating the mission object.
-    mission.plasticType = plasticsData[0].plasticType;
-    mission.numPieces = plasticsData[0].medianCount;
-    mission.product = plasticsData[0].products[17];
-    mission.countries.country1 = plasticsData[0].countries[0].name;
-    mission.plasticsCount.country1 = plasticsData[0].countries[0].count;
-    mission.countries.country2 = plasticsData[0].countries[1].name;
-    mission.plasticsCount.country2 = plasticsData[0].countries[1].count;
-    mission.countries.country3 = plasticsData[0].countries[2].name;
-    mission.plasticsCount.country3 = plasticsData[0].countries[2].count;
-    mission.countries.country4 = plasticsData[0].countries[10].name;
-    mission.plasticsCount.country4 = plasticsData[0].countries[10].count;
-    mission.countries.country5 = plasticsData[0].countries[11].name;
-    mission.plasticsCount.country5 = plasticsData[0].countries[11].count;
-    mission.countries.country6 = plasticsData[0].countries[19].name;
-    mission.plasticsCount.country6 = plasticsData[0].countries[19].count;
+    mission.plasticsIndex = getRandomInt(1);
+    mission.plasticType = plasticsData[mission.plasticsIndex].plasticType;
+    mission.numPieces = plasticsData[mission.plasticsIndex].medianCount;
+    mission.product = plasticsData[mission.plasticsIndex].products[17];
+    mission.countries.country1 = plasticsData[mission.plasticsIndex].countries[0].name;
+    mission.plasticsCount.country1 = plasticsData[mission.plasticsIndex].countries[0].count;
+    mission.countries.country2 = plasticsData[mission.plasticsIndex].countries[1].name;
+    mission.plasticsCount.country2 = plasticsData[mission.plasticsIndex].countries[1].count;
+    mission.countries.country3 = plasticsData[mission.plasticsIndex].countries[2].name;
+    mission.plasticsCount.country3 = plasticsData[mission.plasticsIndex].countries[2].count;
+    mission.countries.country4 = plasticsData[mission.plasticsIndex].countries[10].name;
+    mission.plasticsCount.country4 = plasticsData[mission.plasticsIndex].countries[10].count;
+    mission.countries.country5 = plasticsData[mission.plasticsIndex].countries[11].name;
+    mission.plasticsCount.country5 = plasticsData[mission.plasticsIndex].countries[11].count;
+    mission.countries.country6 = plasticsData[mission.plasticsIndex].countries[19].name;
+    mission.plasticsCount.country6 = plasticsData[mission.plasticsIndex].countries[19].count;
 }
 
 let missionScreen = document.getElementById('missionscreen');
@@ -197,8 +213,7 @@ async function executeMission(missionString) {
     document.getElementById('execution-num-pieces').textContent = mission.numPieces;
     document.getElementById('execution-plastic-type').textContent = mission.plasticType;
     document.getElementById('execution-piece-count').textContent = retrievedCount;
-    // TODO: Need a lookup table from mission.plasticType to keys in plasticsCollected.
-    plasticsCollected.PlasticBeverageBottles += retrievedCount;
+    plasticsCollected[Object.keys(mission.plasticsType)[mission.plasticsIndex]] += retrievedCount;
     // TODO: Populate plasticsCollected with other plastic types retrieved.
     await sleep(5000);
     executionScreen.style.display = 'none';
