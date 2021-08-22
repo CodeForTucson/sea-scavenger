@@ -4,31 +4,40 @@
 // Code for Tucson
 // 20 September 2020
 
+/*** Development constants ***/
+
+// Set this constant to true to select debug code.
+// (Inelegant JavaScript kludge for the lack of conditional compilation.)
+const DEBUG = false;
+
 /*** Game variables ***/
 
 // Plastics collected is an object to keep a talley of the plastic waste 
 // recovered in the missions. The properties are the field names from the 
 // Combined Data Set contained in the CSV or JSON data file.
-let plasticsCollected = {
-    BucketOrCrate: 0,
-    BuoysAndFloats: 0,
+var plasticsCollected = {
+    Buckets: 0,
     CigaretteButts: 0,
-    FishingGlowSticks: 0,
-    FishingLineLureRope: 0,
-    FishingNet: 0,
-    LollipopStickOrEarBud: 0,
+    Crates: 0,
+    Earbuds: 0,
+    FishingLine: 0,
+    FishingNets: 0,
+    Floats: 0,
+    FoamFoodContainers: 0,
+    FoamPlatesOrCups: 0,
+    NylonRope: 0,
+    PlasticBags: 0,
     PlasticBeverageBottles: 0,
-    Plastic_FoamFoodContainer: 0,
-    PlasticBag: 0,
-    PlasticBottleCapOrLid: 0,
-    PlasticDrinkingStraw: 0,
-    PlasticLighter: 0,
-    PlasticOrFoamPlatesCupsSilverware: 0,
-    PlasticPersonalCareProduct: 0,
+    PlasticBottleCaps: 0,
+    PlasticDrinkingStraws: 0,
+    PlasticFoodContainers: 0,
+    PlasticLighters: 0,
+    PlasticPersonalCareProducts: 0,
+    PlasticPlatesOrCups: 0,
+    PlasticRings: 0,
     PlasticSheet: 0,
     PlasticStraps: 0,
-    StringRingRibbon: 0,
-    WrapperOrLabel: 0
+    WrappersOrLabels: 0
 };
 
 // Mission is an object that is populated by the generateMission function.
@@ -36,7 +45,8 @@ let plasticsCollected = {
 // quantity to be collected, the product that can be made from that type of
 // plastic, and six randomly selected countries - some of which will satisfy
 // the mission requirements and some that won't.
-let mission = {
+var mission = {
+    plasticsIndex: 0,
     plasticType: '',
     numPieces: 0,
     product: '',
@@ -66,10 +76,13 @@ async function getData(fileName) {
 }
 
 // Object for plastics data derived from the Integrated Ocean Plastics dataset.
-let plasticsData;
+var plasticsData;
 
 // Object for plastics data derived from Top 10 Ocean Plastics dataset.
-let top10plastics;
+var top10plastics;
+
+// Object for display name lookup from plastics type key.
+var plasticsKeyToDisplayName;
 
 
 /*** Game Logic ***/
@@ -98,6 +111,14 @@ function newMission() {
     displayMissionScreen();
 }
 
+// getRandomInt
+// A helper function to return a random integer between 0 and a max value, non-inclusive.
+// For example, if max = 3, expect getRandomInt(3) to return 0, 1, or 2.
+// getRandomInt(1) will return 0.
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+}
+
 // generateMission
 // Generate a mission for the player to complete.
 // The mission will consist of a plastic type to be collected, the number of
@@ -108,24 +129,25 @@ function newMission() {
 function generateMission () {
     console.log('Generating mission.');
     // TODO: Logic for populating the mission object.
-    mission.plasticType = plasticsData[0].plasticType;
-    mission.numPieces = plasticsData[0].medianCount;
-    mission.product = plasticsData[0].products[17];
-    mission.countries.country1 = plasticsData[0].countries[0].name;
-    mission.plasticsCount.country1 = plasticsData[0].countries[0].count;
-    mission.countries.country2 = plasticsData[0].countries[1].name;
-    mission.plasticsCount.country2 = plasticsData[0].countries[1].count;
-    mission.countries.country3 = plasticsData[0].countries[2].name;
-    mission.plasticsCount.country3 = plasticsData[0].countries[2].count;
-    mission.countries.country4 = plasticsData[0].countries[10].name;
-    mission.plasticsCount.country4 = plasticsData[0].countries[10].count;
-    mission.countries.country5 = plasticsData[0].countries[11].name;
-    mission.plasticsCount.country5 = plasticsData[0].countries[11].count;
-    mission.countries.country6 = plasticsData[0].countries[19].name;
-    mission.plasticsCount.country6 = plasticsData[0].countries[19].count;
+    mission.plasticsIndex = getRandomInt(1);
+    mission.plasticType = plasticsData[mission.plasticsIndex].plasticType;
+    mission.numPieces = plasticsData[mission.plasticsIndex].medianCount;
+    mission.product = plasticsData[mission.plasticsIndex].products[17];
+    mission.countries.country1 = plasticsData[mission.plasticsIndex].countries[0].name;
+    mission.plasticsCount.country1 = plasticsData[mission.plasticsIndex].countries[0].count;
+    mission.countries.country2 = plasticsData[mission.plasticsIndex].countries[1].name;
+    mission.plasticsCount.country2 = plasticsData[mission.plasticsIndex].countries[1].count;
+    mission.countries.country3 = plasticsData[mission.plasticsIndex].countries[2].name;
+    mission.plasticsCount.country3 = plasticsData[mission.plasticsIndex].countries[2].count;
+    mission.countries.country4 = plasticsData[mission.plasticsIndex].countries[10].name;
+    mission.plasticsCount.country4 = plasticsData[mission.plasticsIndex].countries[10].count;
+    mission.countries.country5 = plasticsData[mission.plasticsIndex].countries[11].name;
+    mission.plasticsCount.country5 = plasticsData[mission.plasticsIndex].countries[11].count;
+    mission.countries.country6 = plasticsData[mission.plasticsIndex].countries[19].name;
+    mission.plasticsCount.country6 = plasticsData[mission.plasticsIndex].countries[19].count;
 }
 
-let missionScreen = document.getElementById('missionscreen');
+var missionScreen = document.getElementById('missionscreen');
 
 // displayMissionScreen
 // Display a mission to the player. The player can choose
@@ -149,11 +171,15 @@ function hideMissionScreen() {
 // Highlight the six countries in the mission and display the highlighted map
 // for ten seconds.
 function highlightGameboard() {
-//    window.setTimeout(displayCountryScreen, 10000);
-    window.setTimeout(displayCountryScreen, 500);
+    if (DEBUG === true) {
+        // Shorter display period for country map while debugging.
+        window.setTimeout(displayCountryScreen, 500);
+    } else {
+        window.setTimeout(displayCountryScreen, 10000);
+    }
 }
 
-let countryScreen = document.getElementById('countryscreen');
+var countryScreen = document.getElementById('countryscreen');
 
 // displayCountryScreen
 // Display the country selection screen. The player selects a country via the
@@ -185,7 +211,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-let executionScreen = document.getElementById('missionexecutionscreen');
+var executionScreen = document.getElementById('missionexecutionscreen');
 
 // executeMission
 // Display the mission execution screen and execute the mission for the country
@@ -199,7 +225,6 @@ async function executeMission(missionString) {
     document.getElementById('execution-piece-count').textContent = retrievedCount;
     // TODO: Need a lookup table from mission.plasticType to keys in plasticsCollected.
     plasticsCollected.PlasticBeverageBottles += retrievedCount;
-    // TODO: Populate plasticsCollected with other plastic types retrieved.
     await sleep(5000);
     executionScreen.style.display = 'none';
     if (retrievedCount < mission.numPieces) {
@@ -210,7 +235,7 @@ async function executeMission(missionString) {
     
 }
 
-let confirmationScreen = document.getElementById('confirmationscreen');
+var confirmationScreen = document.getElementById('confirmationscreen');
 
 // displayConfirmationScreen
 // Display the player decision confirmation screen if the player declines a
@@ -226,7 +251,7 @@ function hideConfirmationScreen() {
     confirmationScreen.style.display = 'none';
 }
 
-let statisticsScreen = document.getElementById('statisticsscreen');
+var statisticsScreen = document.getElementById('statisticsscreen');
 
 // displayStatisticsScreen
 // Display the game statistics to the player at the end of the game.
@@ -241,7 +266,7 @@ async function displayStatisticsScreen() {
     displayPlayAgainScreen();
 }
 
-let playAgainScreen = document.getElementById('playagainscreen');
+var playAgainScreen = document.getElementById('playagainscreen');
 
 // displayPlayAgainScreen
 // Display a prompt to the player to play the game again or not.
@@ -265,7 +290,7 @@ function clearGameStats() {
     }
 }
 
-let creditScreen = document.getElementById('creditscreen');
+var creditScreen = document.getElementById('creditscreen');
 
 // displayCreditScreen
 // Displays the credit screen.
@@ -280,14 +305,18 @@ function displayCreditScreen() {
 // This event listener displays the splash screen for the set timeout period.
 window.addEventListener('load' , event => {
     initGame();
-//    window.setTimeout(hideSplash, 30000);
-    window.setTimeout(hideSplash, 500);
+    if (DEBUG === true) {
+        // Shorter splash page timer to avoid waiting while debugging.
+        window.setTimeout(hideSplash, 500);
+    } else {
+        window.setTimeout(hideSplash, 30000);
+    }
 });
 
 // Event listener for the accept mission yes button. 
 // If clicked, the gameboard will be displayed with the six countries available
 // to select.
-let missionYesButton = document.getElementById('mission-yes-button');
+var missionYesButton = document.getElementById('mission-yes-button');
 missionYesButton.addEventListener('click', event => {
     hideMissionScreen();
     highlightGameboard();
@@ -296,7 +325,7 @@ missionYesButton.addEventListener('click', event => {
 // Event listener for the accept mission no button. 
 // If clicked, the confirmation screen will be displayed to verify the player
 // doesn't want to accept the mission (ending the game).
-let missionNoButton = document.getElementById('mission-no-button');
+var missionNoButton = document.getElementById('mission-no-button');
 missionNoButton.addEventListener('click', event => {
     hideMissionScreen();
     displayConfirmationScreen();
@@ -305,7 +334,7 @@ missionNoButton.addEventListener('click', event => {
 // Event listener for country selection button 1. 
 // If clicked, the mission execution screen will be displayed for the selected
 // country.
-let country1Button = document.getElementById('country-button-1');
+var country1Button = document.getElementById('country-button-1');
 country1Button.addEventListener('click', event => {
     hideCountryScreen();
     executeMission('country1');
@@ -314,7 +343,7 @@ country1Button.addEventListener('click', event => {
 // Event listener for country selection button 2. 
 // If clicked, the mission execution screen will be displayed for the selected
 // country.
-let country2Button = document.getElementById('country-button-2');
+var country2Button = document.getElementById('country-button-2');
 country2Button.addEventListener('click', event => {
     hideCountryScreen();
     executeMission('country2');
@@ -323,7 +352,7 @@ country2Button.addEventListener('click', event => {
 // Event listener for country selection button 3.
 // If clicked, the mission execution screen will be displayed for the selected
 // country.
-let country3Button = document.getElementById('country-button-3');
+var country3Button = document.getElementById('country-button-3');
 country3Button.addEventListener('click', event => {
     hideCountryScreen();
     executeMission('country3');
@@ -332,7 +361,7 @@ country3Button.addEventListener('click', event => {
 // Event listener for country selection button 4.
 // If clicked, the mission execution screen will be displayed for the selected
 // country.
-let country4Button = document.getElementById('country-button-4');
+var country4Button = document.getElementById('country-button-4');
 country4Button.addEventListener('click', event => {
     hideCountryScreen();
     executeMission('country4');
@@ -341,7 +370,7 @@ country4Button.addEventListener('click', event => {
 // Event listener for country selection button 5.
 // If clicked, the mission execution screen will be displayed for the selected
 // country.
-let country5Button = document.getElementById('country-button-5');
+var country5Button = document.getElementById('country-button-5');
 country5Button.addEventListener('click', event => {
     hideCountryScreen();
     executeMission('country5');
@@ -350,7 +379,7 @@ country5Button.addEventListener('click', event => {
 // Event listener for country selection button 6.
 // If clicked, the mission execution screen will be displayed for the selected
 // country.
-let country6Button = document.getElementById('country-button-6');
+var country6Button = document.getElementById('country-button-6');
 country6Button.addEventListener('click', event => {
     hideCountryScreen();
     executeMission('country6');
@@ -358,7 +387,7 @@ country6Button.addEventListener('click', event => {
 
 // Event listener for the confirmation screen 'yes' button.
 // If clicked, the game statistics screen will be displayed.
-let confirmYesButton = document.getElementById('confirm-yes-button');
+var confirmYesButton = document.getElementById('confirm-yes-button');
 confirmYesButton.addEventListener('click', event => {
     hideConfirmationScreen();
     displayStatisticsScreen();
@@ -368,7 +397,7 @@ confirmYesButton.addEventListener('click', event => {
 // If clicked, the mission screen will be displayed without generating a new
 // mission. (The mission the player rejected will be displayed again, in order
 // to prevent gaming the logic by rejecting a mission and generating a new one.)
-let confirmNoButton = document.getElementById('confirm-no-button');
+var confirmNoButton = document.getElementById('confirm-no-button');
 confirmNoButton.addEventListener('click', event => {
     hideConfirmationScreen();
     displayMissionScreen();
@@ -376,7 +405,7 @@ confirmNoButton.addEventListener('click', event => {
 
 // Event listener for the play again screen 'yes' button.
 // If clicked, a new game will be started, bypassing the spash screen.
-let playAgainYesButton = document.getElementById('play-again-yes-button');
+var playAgainYesButton = document.getElementById('play-again-yes-button');
 playAgainYesButton.addEventListener('click', event => {
     hidePlayAgainScreen();
     clearGameStats();
@@ -386,7 +415,7 @@ playAgainYesButton.addEventListener('click', event => {
 
 // Event listener for the play again screen 'no' button.
 // If clicked. the credit screen will be displayed.
-let playAgainNoButton = document.getElementById('play-again-no-button');
+var playAgainNoButton = document.getElementById('play-again-no-button');
 playAgainNoButton.addEventListener('click', event => {
     hidePlayAgainScreen();
     displayCreditScreen();
