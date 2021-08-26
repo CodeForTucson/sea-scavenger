@@ -8,7 +8,7 @@
 
 // Set this constant to true to select debug code.
 // (Inelegant JavaScript kludge for the lack of conditional compilation.)
-const DEBUG = false;
+const DEBUG = true;
 
 /*** Game variables ***/
 
@@ -230,9 +230,22 @@ async function executeMission(missionString) {
     if (retrievedCount < mission.numPieces) {
         displayStatisticsScreen();
     } else {
-        newMission();
+        displayMissionSuccessScreen();
     }
     
+}
+
+var missionSuccessScreen = document.getElementById('missionsuccessscreen');
+
+// displayMissionSuccessScreen
+// Display the mission success screen if the player retrieved enough plastics
+// to satisfy the mission requirements. After a delay to allow the player to read
+// the text, the new mission function is called.
+async function displayMissionSuccessScreen() {
+    missionSuccessScreen.style.display = 'grid';
+    await sleep(3000);
+    missionSuccessScreen.style.display = 'none';
+    newMission();
 }
 
 var confirmationScreen = document.getElementById('confirmationscreen');
