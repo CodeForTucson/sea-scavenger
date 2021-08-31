@@ -90,9 +90,8 @@ var plasticsKeyToDisplayName;
 // initGame
 // Load data files and any other actions needed to initialize gameplay.
 async function initGame() {
-    plasticsData = await getData('data/plastics-test.json')
-    console.log(plasticsData);
-    console.log(plasticsData[0]);  
+    plasticsData = await getData('data/plastics.json')
+    console.log(plasticsData[11]);  
 }
 
 // hideSplash
@@ -129,7 +128,7 @@ function getRandomInt(max) {
 function generateMission () {
     console.log('Generating mission.');
     // TODO: Logic for populating the mission object.
-    mission.plasticsIndex = getRandomInt(1);
+    mission.plasticsIndex = 11;
     mission.plasticType = plasticsData[mission.plasticsIndex].plasticType;
     mission.numPieces = plasticsData[mission.plasticsIndex].medianCount;
     mission.product = plasticsData[mission.plasticsIndex].products[17];

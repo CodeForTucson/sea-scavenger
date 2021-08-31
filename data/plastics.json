@@ -1,6 +1,7 @@
 [
     {
-        "plasticType" : "Buckets", 
+        "plasticType" : "Buckets",
+        "plasticKey" : "Buckets", 
         "maxCount" : 962,
         "medianCount" : 5,
         "products" : [
@@ -90,6 +91,7 @@
     },
     {
         "plasticType" :  "Cigarette Butts",
+        "plasticKey" : "CigaretteButts",
         "maxCount" : 3664162,
         "medianCount" : 128829,
         "products" : [
@@ -202,7 +204,8 @@
         ]
     },
     {
-        "plasticType" : "Crates", 
+        "plasticType" : "Crates",
+        "plasticKey" : "Crates", 
         "maxCount" : 962,
         "medianCount" : 5,
         "products" : [
@@ -294,6 +297,7 @@
     },
     { 
         "plasticType" : "Earbuds",
+        "plasticKey" : "Earbuds",
         "maxCount" : 29986,
         "medianCount" : 624,
         "products" : [
@@ -404,6 +408,7 @@
     },
     {
         "plasticType" : "Fishing Line",
+        "plasticKey" : "FishingLine",
         "maxCount" : 252040,
         "medianCount" : 15299,
         "products" : [
@@ -516,6 +521,7 @@
     },
     {
         "plasticType" : "Fishing Nets",
+        "plasticKey" : "FishingNets",
         "maxCount" : 81344,
         "medianCount" : 8005,
         "products" : [
@@ -638,6 +644,7 @@
     },
     { 
         "plasticType" : "Floats",
+        "plasticKey" : "Floats",
         "maxCount" : 43708,
         "medianCount" : 5377,
         "products" : [
@@ -758,6 +765,7 @@
     },
     { 
         "plasticType" : "Foam Food Containers",
+        "plasticKey" : "FoamFoodContainers",
         "maxCount" : 996202,
         "medianCount" : 34449,
         "products" : [
@@ -878,6 +886,7 @@
     },
     { 
         "plasticType" : "Foam Plates or Cups",
+        "plasticKey" : "FoamPlatesOrCups",
         "maxCount" : 1828998,
         "medianCount" : 88833,
         "products" : [
@@ -998,6 +1007,7 @@
     },
     { 
         "plasticType" : "Nylon Rope",
+        "plasticKey" : "NylonRope",
         "maxCount" : 252040,
         "medianCount" : 15299,
         "products" : [
@@ -1113,6 +1123,7 @@
     },
     { 
         "plasticType" : "Plastic Bags",
+        "plasticKey" : "PlasticBags",
         "maxCount" : 1518112,
         "medianCount" : 73767,
         "products" : [
@@ -1231,6 +1242,7 @@
     },
     { 
         "plasticType" : "Plastic Beverage Bottles",
+        "plasticKey" : "PlasticBeverageBottles",
         "maxCount" : 785408,
         "medianCount" : 117962,
         "products" : [
@@ -1361,6 +1373,7 @@
     },
     { 
         "plasticType" : "Plastic Bottle Caps",
+        "plasticKey" : "PlasticBottleCaps",
         "maxCount" : 1299959,
         "medianCount" : 100637,
         "products" : [
@@ -1472,6 +1485,7 @@
     },
     { 
         "plasticType" : "Plastic Drinking Straws",
+        "plasticKey" : "PlasticDrinkingStraws",
         "maxCount" : 2997454,
         "medianCount" : 32915,
         "products" : [
@@ -1582,6 +1596,7 @@
     },
     {
         "plasticType" : "Plastic Food Containers",
+        "plasticKey" : "PlasticFoodContainers",
         "maxCount" : 996202,
         "medianCount" : 34449,
         "products" : [
@@ -1700,6 +1715,7 @@
     },
     { 
         "plasticType" : "Plastic Lighters",
+        "plasticKey" : "PlasticLighters",
         "maxCount" : 60803,
         "medianCount" : 3800,
         "products" : [
@@ -1810,6 +1826,7 @@
     },
     { 
         "plasticType" : "Plastic Personal Care Products",
+        "plasticKey" : "PlasticPersonalCareProducts",
         "maxCount" : 284593,
         "medianCount" : 9728,
         "products" : [
@@ -1920,6 +1937,7 @@
     },
     { 
         "plasticType" : "Plastic Plates or Cups",
+        "plasticKey" : "PlasticPlatesOrCups",
         "maxCount" : 1828998,
         "medianCount" : 88833,
         "products" : [
@@ -2038,6 +2056,7 @@
     },
     { 
         "plasticType" : "Plastic Rings",
+        "plasticKey" : "PlasticRings",
         "maxCount" : 51950,
         "medianCount" : 3389,
         "products" : [
@@ -2151,6 +2170,7 @@
     },
     { 
         "plasticType" : "Plastic Sheet",
+        "plasticKey" : "PlasticSheet",
         "maxCount" : 3276,
         "medianCount" : 27,
         "products" : [
@@ -2247,6 +2267,7 @@
     },
     { 
         "plasticType" : "Plastic Straps",
+        "plasticKey" : "PlasticStraps",
         "maxCount" : 57776,
         "medianCount" : 3984,
         "products" : [
@@ -2357,6 +2378,7 @@
     },
     { 
         "plasticType" : "Wrappers or Labels",
+        "plasticKey" : "WrappersOrLabels",
         "maxCount" : 2999555,
         "medianCount" : 51584,
         "products" : [
