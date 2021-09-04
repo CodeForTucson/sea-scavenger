@@ -156,6 +156,7 @@ function displayMissionScreen() {
     document.getElementById('mission-num-pieces').textContent = mission.numPieces;
     document.getElementById('mission-plastic-type').textContent = mission.plasticType;
     document.getElementById('plastic-product').textContent = mission.product;
+    // TODO: Determine how to access plastic and product image files from text in mission.
     document.getElementById('plastic-image').src = 'images/plastics/plastic-beverage-bottle.png';
     document.getElementById('product-image').src = 'images/products/toothbrushes.png';
 }
