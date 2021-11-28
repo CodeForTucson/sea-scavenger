@@ -8,7 +8,7 @@
 
 // Set this constant to true to select debug code.
 // (Inelegant JavaScript kludge for the lack of conditional compilation.)
-const DEBUG = true;
+const DEBUG = false;
 
 /*** Game variables ***/
 
@@ -81,8 +81,20 @@ var plasticsData;
 // Object for plastics data derived from Top 10 Ocean Plastics dataset.
 var top10plastics;
 
-// Object for display name lookup from plastics type key.
+// Object for display name lookup from plastics type keys.
 var plasticsKeyToDisplayName;
+
+// Object for display name lookup from products keys.
+var productsKeyToDisplayName;
+
+// Object for display name lookup from country keys.
+var countryKeyToDisplayName;
+
+// Object for image link lookup from plastics type keys.
+var plasticsKeyToImageLink;
+
+// Object for image link lookup from products keys.
+var productsKeyToImageLink;
 
 
 /*** Game Logic ***/
@@ -90,9 +102,16 @@ var plasticsKeyToDisplayName;
 // initGame
 // Load data files and any other actions needed to initialize gameplay.
 async function initGame() {
-    plasticsData = await getData('data/plastics-test.json')
-    console.log(plasticsData);
-    console.log(plasticsData[0]);  
+    plasticsData = await getData('data/plastics-test.json');
+    top10plastics = await getData('data/top-10-plastics-by-country-test.json');
+    plasticsKeyToDisplayName = await getData('data/plastics-key-to-display-name.json');
+    productsKeyToDisplayName = await getData('data/products-key-to-display-name.json');
+    countryKeyToDisplayName = await getData('data/countries-key-to-display-name.json');
+    plasticsKeyToImageLink = await getData('data/plastics-key-to-image-link.json');
+    productsKeyToImageLink = await getData('data/products-key-to-image-link.json');
+    if (DEBUG === true) {
+        console.log('initGame complete');
+    }
 }
 
 // hideSplash
@@ -121,29 +140,30 @@ function getRandomInt(max) {
 
 // generateMission
 // Generate a mission for the player to complete.
-// The mission will consist of a plastic type to be collected, the number of
-// pieces to be collected, a product to be made from the collected plastic, and
-// six countries to collect the plastic from. Some of the countries will have a
-// high likelihood of being able to achieve the mission and the others will have
-// a low likelihood, as determined by parsing the plastics data.
+// The mission will consist of the key to a plastic type to be collected, the 
+// number of pieces to be collected, a the key to a product to be made from the 
+// collected plastic, and keys to six countries to collect the plastic from. Some 
+// of the countries will have a high likelihood of being able to achieve the 
+// mission and the others will have a low likelihood, as determined by parsing 
+// the plastics data.
 function generateMission () {
     console.log('Generating mission.');
     // TODO: Logic for populating the mission object.
-    mission.plasticsIndex = getRandomInt(1);
-    mission.plasticType = plasticsData[mission.plasticsIndex].plasticType;
+    mission.plasticsIndex = 0;
+    mission.plasticKey = plasticsData[mission.plasticsIndex].plasticKey;
     mission.numPieces = plasticsData[mission.plasticsIndex].medianCount;
-    mission.product = plasticsData[mission.plasticsIndex].products[17];
-    mission.countries.country1 = plasticsData[mission.plasticsIndex].countries[0].name;
+    mission.productKey = plasticsData[mission.plasticsIndex].productKeys[17];
+    mission.countries.country1 = plasticsData[mission.plasticsIndex].countries[0].countryKey;
     mission.plasticsCount.country1 = plasticsData[mission.plasticsIndex].countries[0].count;
-    mission.countries.country2 = plasticsData[mission.plasticsIndex].countries[1].name;
+    mission.countries.country2 = plasticsData[mission.plasticsIndex].countries[1].countryKey;
     mission.plasticsCount.country2 = plasticsData[mission.plasticsIndex].countries[1].count;
-    mission.countries.country3 = plasticsData[mission.plasticsIndex].countries[2].name;
+    mission.countries.country3 = plasticsData[mission.plasticsIndex].countries[2].countryKey;
     mission.plasticsCount.country3 = plasticsData[mission.plasticsIndex].countries[2].count;
-    mission.countries.country4 = plasticsData[mission.plasticsIndex].countries[10].name;
+    mission.countries.country4 = plasticsData[mission.plasticsIndex].countries[10].countryKey;
     mission.plasticsCount.country4 = plasticsData[mission.plasticsIndex].countries[10].count;
-    mission.countries.country5 = plasticsData[mission.plasticsIndex].countries[11].name;
+    mission.countries.country5 = plasticsData[mission.plasticsIndex].countries[11].countryKey;
     mission.plasticsCount.country5 = plasticsData[mission.plasticsIndex].countries[11].count;
-    mission.countries.country6 = plasticsData[mission.plasticsIndex].countries[19].name;
+    mission.countries.country6 = plasticsData[mission.plasticsIndex].countries[19].countryKey;
     mission.plasticsCount.country6 = plasticsData[mission.plasticsIndex].countries[19].count;
 }
 
@@ -155,10 +175,11 @@ var missionScreen = document.getElementById('missionscreen');
 function displayMissionScreen() {
     missionScreen.style.display = 'grid';
     document.getElementById('mission-num-pieces').textContent = mission.numPieces;
-    document.getElementById('mission-plastic-type').textContent = mission.plasticType;
-    document.getElementById('plastic-product').textContent = mission.product;
-    document.getElementById('plastic-image').src = 'images/plastics/plastic-beverage-bottle.png';
-    document.getElementById('product-image').src = 'images/products/toothbrushes.png';
+    document.getElementById('mission-plastic-type').textContent = plasticsKeyToDisplayName[mission.plasticKey];
+    document.getElementById('plastic-product').textContent = productsKeyToDisplayName[mission.productKey];
+    // TODO: Determine how to access plastic and product image files from text in mission.
+    document.getElementById('plastic-image').src = plasticsKeyToImageLink[mission.plasticKey];
+    document.getElementById('product-image').src = productsKeyToImageLink[mission.productKey];
 }
 
 // hideMissionScreen
@@ -187,13 +208,13 @@ var countryScreen = document.getElementById('countryscreen');
 function displayCountryScreen() {
     countryScreen.style.display = 'grid';
     document.getElementById('country-num-pieces').textContent = mission.numPieces;
-    document.getElementById('country-plastic-type').textContent = mission.plasticType;
-    document.getElementById('country-button-1').textContent = mission.countries.country1;
-    document.getElementById('country-button-2').textContent = mission.countries.country2;
-    document.getElementById('country-button-3').textContent = mission.countries.country3;
-    document.getElementById('country-button-4').textContent = mission.countries.country4;
-    document.getElementById('country-button-5').textContent = mission.countries.country5;
-    document.getElementById('country-button-6').textContent = mission.countries.country6
+    document.getElementById('country-plastic-type').textContent = plasticsKeyToDisplayName[mission.plasticKey];
+    document.getElementById('country-button-1').textContent = countryKeyToDisplayName[mission.countries.country1];
+    document.getElementById('country-button-2').textContent = countryKeyToDisplayName[mission.countries.country2];
+    document.getElementById('country-button-3').textContent = countryKeyToDisplayName[mission.countries.country3];
+    document.getElementById('country-button-4').textContent = countryKeyToDisplayName[mission.countries.country4];
+    document.getElementById('country-button-5').textContent = countryKeyToDisplayName[mission.countries.country5];
+    document.getElementById('country-button-6').textContent = countryKeyToDisplayName[mission.countries.country6];
 }
 
 // hideCountryScreen
@@ -221,7 +242,7 @@ async function executeMission(missionString) {
     executionScreen.style.display = 'grid';
     let retrievedCount = mission.plasticsCount[missionString];
     document.getElementById('execution-num-pieces').textContent = mission.numPieces;
-    document.getElementById('execution-plastic-type').textContent = mission.plasticType;
+    document.getElementById('execution-plastic-type').textContent = plasticsKeyToDisplayName[mission.plasticKey];
     document.getElementById('execution-piece-count').textContent = retrievedCount;
     // TODO: Need a lookup table from mission.plasticType to keys in plasticsCollected.
     plasticsCollected.PlasticBeverageBottles += retrievedCount;
@@ -272,7 +293,7 @@ async function displayStatisticsScreen() {
     statisticsScreen.style.display = 'grid';
     // TODO: Logic to display Top 10 recovered plastic types and counts. 
     // TODO: Reverse lookup from plasticsCollected keys to plasticType names.
-    document.getElementById('summary-plastic-type1').textContent = mission.plasticType;
+    document.getElementById('summary-plastic-type1').textContent = plasticsKeyToDisplayName[mission.plasticKey];
     document.getElementById('summary-plastic-count1').textContent = plasticsCollected.PlasticBeverageBottles;
     await sleep(5000);
     statisticsScreen.style.display = 'none';

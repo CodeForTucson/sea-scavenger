@@ -1,129 +1,129 @@
 [
     { 
-        "plasticType" : "Plastic Beverage Bottles",
+        "plasticKey" : "plasticBeverageBottles",
         "maxCount" : 785408,
         "medianCount" : 117962,
-        "products" : [
-            "Backpacks",
-            "Bras",
-            "Construction Material",
-            "Dog Beds",
-            "Dog Collars",
-            "Dog Leashes",
-            "Door Mats",
-            "Fanny Packs",
-            "Jackets",
-            "Laptop Cases",
-            "Leggings",
-            "Lunch Bags",
-            "Pens",
-            "Sailboats",
-            "Shoe Laces",
-            "Soccer Kit",
-            "Sweatpants",
-            "Toothbrushes",
-            "Tote Bags",
-            "Toys",
-            "Travel Bags"
+        "productKeys" : [
+            "backpacks",
+            "bras",
+            "constructionMaterial",
+            "dogBeds",
+            "dogCollars",
+            "dogLeashes",
+            "doorMats",
+            "fannyPacks",
+            "jackets",
+            "laptopCases",
+            "leggings",
+            "lunchBags",
+            "pens",
+            "sailboats",
+            "shoeLaces",
+            "soccerKit",
+            "sweatpants",
+            "toothbrushes",
+            "toteBags",
+            "toys",
+            "travelBags"
         ],
         "countries" : [
             { 
-                "name" : "Jamaica",
+                "countryKey" : "JM",
                 "count" : 785408,
                 "rank" : 1
             },
             { 
-                "name" : "United States",
+                "countryKey" : "US",
                 "count" : 753841,
                 "rank" : 2
             },
             { 
-                "name" : "Philippines",
+                "countryKey" : "RP",
                 "count" : 627877,
                 "rank" : 3
             },
             { 
-                "name" : "Mexico",
+                "countryKey" : "MX",
                 "count" : 604268,
                 "rank" : 4
             },
             { 
-                "name" : "Ghana",
+                "countryKey" : "GH",
                 "count" : 249266,
                 "rank" : 5
             },
             { 
-                "name" : "Ecuador",
+                "countryKey" : "EC",
                 "count" : 187963,
                 "rank" : 6
             },
             { 
-                "name" : "Sri Lanka",
+                "countryKey" : "CE",
                 "count" : 179539,
                 "rank" : 7
             },
             { 
-                "name" : "China",
+                "countryKey" : "CH",
                 "count" : 164406,
                 "rank" : 8
             },
             { 
-                "name" : "Malaysia",
+                "countryKey" : "MY",
                 "count" : 150655,
                 "rank" : 9
             },
             { 
-                "name" : "Panama",
+                "countryKey" : "PM",
                 "count" : 132322,
                 "rank" : 10
             },
             { 
-                "name" : "Kenya",
+                "countryKey" : "KE",
                 "count" : 103602,
                 "rank" : 11
             },
             { 
-                "name" : "Trinidad and Tobago",
+                "countryKey" : "TD",
                 "count" : 93476,
                 "rank" : 12
             },
             { 
-                "name" : "Guatemala",
+                "countryKey" : "GT",
                 "count" : 86594,
                 "rank" : 13
             },
             { 
-                "name" : "Venezuela",
+                "countryKey" : "VE",
                 "count" : 86535,
                 "rank" : 14
             },
             { 
-                "name" : "Puerto Rico",
+                "countryKey" : "RQ",
                 "count" : 86191,
                 "rank" : 15
             },
             { 
-                "name" : "India",
+                "countryKey" : "IN",
                 "count" : 76491,
                 "rank" : 16
             },
             { 
-                "name" : "Dominican Republic",
+                "countryKey" : "DR",
                 "count" : 66252,
                 "rank" : 17
             },
             { 
-                "name" : "Singapore",
+                "countryKey" : "SN",
                 "count" : 58307,
                 "rank" : 18
             },
             { 
-                "name" : "Canada",
+                "countryKey" : "CA",
                 "count" : 55666,
                 "rank" : 19
             },
             { 
-                "name" : "Costa Rica",
+                "countryKey" : "CS",
                 "count" : 39087,
                 "rank" : 20
             }
